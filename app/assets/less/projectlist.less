@@ -1,0 +1,131 @@
+@import 'variables.less';
+.content{
+	.container{
+		width: 1160px;
+	}	
+}
+
+.project-list-box{
+	background-color: #fff;
+	padding: 25px 35px;
+	header{
+		padding-bottom: 30px;
+		button{
+			margin:20px 0 10px 0;
+			border: 2px solid;
+			border-radius: 17px;
+		}
+	}
+	table{
+		thead{
+			tr{
+				th{padding: 20px 10px;}
+				th:nth-child(2){width: 134px;}
+				th:nth-child(3){width: 113px;}
+				th:nth-child(4),
+				th:nth-child(5){width: 174px;}
+
+			}
+		}
+		tbody{
+			tr{
+				td{ 
+					padding: 20px 10px;
+					span{
+						background-color: #efe9e7;
+						border-radius: 3px;
+						padding: 3px 10px;
+					}
+					a {margin: 0 5px;}
+				}
+				td:nth-child(6){width: 200px;}
+				td:nth-child(7){width: 200px;}
+				td:nth-child(8){width: 235px;}
+				td:nth-child(4),
+				td:nth-child(5){
+					position: relative;
+					padding-left: 55px;
+				}
+				td:nth-child(4):before,
+				td:nth-child(5):before,
+				td:nth-child(4):after,
+				td:nth-child(5):after,{
+					content: "";
+					position: absolute;
+					left: 0;
+					top: 47%;
+					width: 50px;
+					height: 10px;
+					border-radius: 5px;
+					background-color: #d9e1e6;
+				}
+				td:nth-child(4):after,
+				td:nth-child(5):after,{
+					width: 38px;
+					background-color: #4682f2;
+				}
+			}
+			tr:nth-child(odd){background-color: #fafafa;}
+		}
+	}
+}
+.modal-dialog{
+	.modal-content{
+		border-radius: 0;
+		.modal-header{
+			button.close{
+				color: @brand-primary;
+				opacity: 1;
+			}
+		}
+		.modal-body{
+			background-color: #f5f5f5;
+			overflow: hidden;
+			padding: 50px 100px;
+			a{
+				width: 280px;
+				height: 320px;
+				border: 1px solid #ddd;
+				background-color: #fff;
+				display: block;
+				margin: 0 auto;
+				position: relative;
+				font-size: 24px;
+				font-weight: bold;
+				text-align: center;
+				padding-top: 240px;
+				color: #333;
+			}
+			a:before{
+				content: "";
+				position: absolute;
+				width: 180px;
+				height: 180px;
+				left: 50px;
+				top: 38px;
+				border-radius: 50%;
+				background-color: #60c1ef;
+			}
+			a:after{
+				content: "";
+				position: absolute;
+				background-repeat: no-repeat;
+			}
+			.icon_normal:after{
+				background-image: url('../images/icon_normal.png');
+				width: 109px;
+				height: 83px;
+				top: 95px;
+				left: 88px;
+			}
+			.icon_rtb:before{background-color: #53d76f;}
+			.icon_rtb:after{
+				background-image: url('../images/icon_rtb.png');
+				width: 94px;
+				height: 106px;
+				top: 74px;
+				left: 93px;
+			}
+		}
+	}	
+}
