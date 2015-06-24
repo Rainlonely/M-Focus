@@ -1,0 +1,94 @@
+.select-project .col-xs-1 {
+  line-height: 50px;
+  font-size: 16px;
+  color: #95a1b2;
+}
+.tab-box {
+  background-color: #fff;
+  margin-top: 40px;
+}
+.tab-box .nav-tabs {
+  border-bottom: 1px solid #ddd;
+}
+.tab-box .nav-tabs li a {
+  font-size: 24px;
+  font-weight: bolder;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  border-bottom: 4px solid transparent;
+  color: #aaa;
+}
+.tab-box .nav-tabs li.active a {
+  color: #333;
+  border-bottom: 4px solid #1b2f56;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  background-color: #fff;
+}
+.tab-box .filter-box {
+  height: 132px;
+  border-bottom: 1px solid #ddd;
+  line-height: 131px;
+  margin: 0 50px;
+}
+.tab-box .filter-box span {
+  margin: 0 30px;
+  padding: 5px 0;
+  cursor: pointer;
+}
+.tab-box .filter-box span:nth-child(1) {
+  margin-left: 0;
+}
+.tab-box .filter-box span.active {
+  border-bottom: 2px solid #1b2f56;
+}
+.tab-box .filter-box .select {
+  float: right;
+  width: 125px;
+  margin-top: 45px;
+}
+.tab-box .filter-box .select select {
+  width: 125px;
+  height: 30px;
+  font-size: 14px;
+  border-radius: 15px;
+  border: 2px solid #ddd;
+  text-align: center;
+  padding: 0 15px;
+  box-shadow: none;
+}
+.tab-box .filter-box .select i {
+  box-shadow: none;
+}
+.tab-box .filter-box .select i:after {
+  bottom: 0;
+}
+.tab-box .chart-box {
+  height: 500px;
+  margin: 0 50px;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+}
+.tab-box .chart-box button {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 105px;
+  height: 105px;
+  background-color: #fafafa;
+  -webkit-appearance: none;
+  border: 0;
+  color: #1b2f56;
+}
+table {
+  margin: 0 50px;
+  width: 1040px;
+}
+table tr {
+  height: 75px;
+}
+table tbody tr:nth-child(odd) {
+  background-color: #fafafa;
+}
