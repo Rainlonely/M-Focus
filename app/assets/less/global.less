@@ -1,39 +1,74 @@
 @import "variables.less";
-ul{
-	padding: 0;
-	list-style: none;
+ul {
+    padding: 0;
+    list-style: none;
 }
-nav{
-	background-color: @brand-primary;
-	padding:10px 0;
-	font-size: 14px;
-	color: #fff;
-	line-height: 40px;
-	margin-bottom: 55px;
-	.nav-logo{float: left;}
-	.nav-menu-box{
-		float: left;
-		ul{
-			li{
-				float: left;
-				padding: 0 20px;
-				a{color: #fff;}
-				a:hover{ text-decoration: none;}
-			}
-			li:hover{background-color: #162645;}
-		}
-	}
-	.nav-avatar-box{
-		float: left;
-		position: relative;
-		.exit-box{
-			position: absolute;
-			width: 100%;
-			padding:0 10px;
-			background-color: #fff;
-			color: @brand-primary;
-			display: none;
-		}
-	}
-	.nav-avatar-box:hover{.exit-box{display: block;}}
+
+nav {
+    background-color: @brand-primary;
+    padding: 10px 0;
+    font-size: 14px;
+    color: #fff;
+    line-height: 40px;
+    margin-bottom: 55px;
+    .nav-logo {
+        float: left;
+    }
+    .nav-menu-box {
+        float: left;
+        ul {
+            li {
+                float: left;
+                padding: 0 20px;
+                a {
+                    color: #fff;
+                }
+                a:hover {
+                    text-decoration: none;
+                }
+            }
+            li:hover {
+                background-color: #162645;
+            }
+        }
+    }
+    .nav-avatar-box {
+        float: left;
+        position: relative;
+        .exit-box {
+            position: absolute;
+            width: 100%;
+            padding: 0 10px;
+            background-color: #fff;
+            color: @brand-primary;
+            display: none;
+        }
+    }
+    .nav-avatar-box:hover {
+        .exit-box {
+            display: block;
+        }
+    }
+}
+
+.process-bar {
+    position: relative;
+    padding-left: 55px!important;
+}
+
+.process-bar:before,
+.process-bar:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 47%;
+    width: 50px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #d9e1e6;
+}
+
+.process-bar:after {
+    width: 38px;
+    background-color: #4682f2;
 }

@@ -53,14 +53,131 @@
             <div class="tab-box">
                 <!-- Nav tabs -->
                 <ul class="nav nav-tabs" role="tablist">
-                    <li role="presentation" class="col-xs-6" ><a class="text-center" href="#data-watch" aria-controls="home" role="tab" data-toggle="tab">数据监控</a></li>
-                    <li role="presentation" class="col-xs-6 active"><a class="text-center" href="#media-report" aria-controls="profile" role="tab" data-toggle="tab">媒体报表</a></li>
+                    <li role="presentation" class="col-xs-6 active" ><a class="text-center" href="#data-watch" aria-controls="home" role="tab" data-toggle="tab">数据监控</a></li>
+                    <li role="presentation" class="col-xs-6 "><a class="text-center" href="#media-report" aria-controls="profile" role="tab" data-toggle="tab">媒体报表</a></li>
                 </ul>
                 <div class="tab-content">
-			    	<div role="tabpanel" class="tab-pane " id="data-watch">
-			    		
+			    	<div role="tabpanel" class="tab-pane active" id="data-watch">
+			    		<div class="filter-box row">
+			    			<div class="col-xs-3 text-left">
+			    				<label class="select">
+									<select class="blue">
+										<option>展现量</option>
+									</select>
+									<i></i>
+								</label>
+			    			</div>
+							<div class="col-xs-6 text-center">
+								<span class="active">今天</span>
+								<span>昨天</span>
+								<span>近7天</span>
+								<span>近39天</span>
+								<span>自定义</span>
+							</div>
+							<div class="col-xs-3 text-right">
+								<label class="select">
+									<select class="yellow">
+										<option>CTR</option>
+									</select>
+									<i></i>
+								</label>
+							</div>
+						</div>
+						<div class="chart-box"></div>
+						<div class="custom-box">
+							<div class="option-box">
+								<div class="col">自定义列</div>
+								<div class="col-xs-2">
+									<div class="checkbox" for="data-show">
+										<label for="data-show">展现量</label>
+										<input type="checkbox" name="data-show">
+									</div>
+								</div>
+								<div class="col-xs-2">
+									<div class="checkbox" for="data-show">
+										<label for="data-show">展现量</label>
+										<input type="checkbox" name="data-show">
+									</div>
+								</div>
+								<div class="col-xs-2">
+									<div class="checkbox" for="data-show">
+										<label for="data-show">展现量</label>
+										<input type="checkbox" name="data-show">
+									</div>
+								</div>
+								<div class="col-xs-2">
+									<div class="checkbox" for="data-show">
+										<label for="data-show">展现量</label>
+										<input type="checkbox" name="data-show">
+									</div>
+								</div>
+								<div class="col-xs-2">
+									<div class="checkbox" for="data-show">
+										<label for="data-show">展现量</label>
+										<input type="checkbox" name="data-show">
+									</div>
+								</div>
+								<div class="col-xs-2">
+									<div class="checkbox" for="data-show">
+										<label for="data-show">展现量</label>
+										<input type="checkbox" name="data-show">
+									</div>
+								</div>
+								<div class="col-xs-2">
+									<div class="checkbox" for="data-show">
+										<label for="data-show">展现量</label>
+										<input type="checkbox" name="data-show">
+									</div>
+								</div>
+								<div class="col-xs-2">
+									<div class="checkbox" for="data-show">
+										<label for="data-show">展现量</label>
+										<input type="checkbox" name="data-show">
+									</div>
+								</div>
+								<div class="col-xs-2">
+									<div class="checkbox" for="data-show">
+										<label for="data-show">展现量</label>
+										<input type="checkbox" name="data-show">
+									</div>
+								</div>	
+							</div>	
+							<button class="btn-download"><i class="fa fa-download fa-2x"></i><p>下载报表</p></button>
+						</div>
+						<table>
+							<thead align="center">
+								<tr>
+									<th>日期</th>	
+									<th>展现量</th>	
+									<th>点击量</th>	
+									<th>点击率</th>	
+									<th>消费</th>
+									<th>日预算</th>	
+									<th>日预算进度</th>
+									<th>点击单价</th>
+									<th>千次点击单价</th>
+									<th>上下线时间</th>	
+								</tr>
+							</thead>
+							<tbody>
+								<tr align="center">
+									<td>2015-01-14</td>
+									<td>2,822,120</td>
+									<td>622,120</td>
+									<td>1.50%</td>
+									<td>￥2,120.00</td>
+									<td>￥5,120.00</td>
+									<td class="process-bar"></td>
+									<td>￥0.69</td>
+									<td>￥690.00</td>
+									<td>
+										始 2015-05-01 00:00:00 <br>至 2015-06-01 00:00:00
+									</td>
+								</tr>
+							</tbody>
+						</table>
 			    	</div>
-					<div role="tabpanel" class="tab-pane active" id="media-report">
+					<div role="tabpanel" class="tab-pane" id="media-report">
 						<div class="filter-box row">
 							<div class="col-xs-6">
 								<span class="active">今天</span>
@@ -69,7 +186,7 @@
 								<span>近39天</span>
 								<span>自定义</span>
 							</div>
-							<div class="col-xs-6">
+							<div class="col-xs-6 text-right">
 								<label class="select">
 									<select>
 										<option>展现量</option>
@@ -79,7 +196,7 @@
 							</div>
 						</div>
 						<div class="chart-box">
-							<button><i class="fa fa-download fa-2x"></i><p>下载报表</p></button>
+							<button class="btn-download"><i class="fa fa-download fa-2x"></i><p>下载报表</p></button>
 						</div>
 						<table>
 							<thead align="center">

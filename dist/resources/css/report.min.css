@@ -45,7 +45,6 @@
   border-bottom: 2px solid #1b2f56;
 }
 .tab-box .filter-box .select {
-  float: right;
   width: 125px;
   margin-top: 45px;
 }
@@ -58,6 +57,12 @@
   text-align: center;
   padding: 0 15px;
   box-shadow: none;
+}
+.tab-box .filter-box .select .blue {
+  border-color: #38c6e6;
+}
+.tab-box .filter-box .select .yellow {
+  border-color: #eddf46;
 }
 .tab-box .filter-box .select i {
   box-shadow: none;
@@ -75,20 +80,42 @@
   position: absolute;
   right: 0;
   bottom: 0;
-  width: 105px;
+}
+.tab-box .custom-box {
+  margin-top: 50px;
+  padding: 0 50px;
+  overflow: hidden;
+}
+.tab-box .custom-box .option-box {
+  float: left;
+  width: 930px;
+  background-color: #f5f5f5;
+  overflow: hidden;
+}
+.tab-box .custom-box .option-box .col {
   height: 105px;
-  background-color: #fafafa;
-  -webkit-appearance: none;
-  border: 0;
-  color: #1b2f56;
+  width: 105px;
+  text-align: center;
+  line-height: 105px;
+  float: left;
+}
+.tab-box button {
+  float: right;
 }
 table {
   margin: 0 50px;
   width: 1040px;
+}
+table th {
+  text-align: center;
 }
 table tr {
   height: 75px;
 }
 table tbody tr:nth-child(odd) {
   background-color: #fafafa;
+}
+table .process-bar:before,
+table .process-bar:after {
+  left: 30px;
 }
