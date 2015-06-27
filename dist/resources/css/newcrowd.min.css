@@ -1,0 +1,105 @@
+.status-bar {
+  margin-top: 58px;
+  margin-bottom: 58px;
+}
+.status-bar ul {
+  overflow: hidden;
+  margin: 0 auto;
+}
+.status-bar ul li {
+  float: left;
+  width: 56px;
+  height: 53px;
+  color: #aaa;
+  margin: 0 35px;
+  position: relative;
+}
+.status-bar ul li span {
+  position: relative;
+  padding-top: 37px;
+  display: block;
+}
+.status-bar ul li span:before {
+  content: "";
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  border-radius: 14px;
+  border: 1px solid #aaa;
+  left: 14px;
+  top: 0;
+}
+.status-bar ul li:after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  background-color: #e7e7e7;
+  width: 60px;
+  right: -60px;
+  top: 13px;
+}
+.status-bar ul li:nth-last-child(1):after {
+  position: relative;
+}
+.status-bar ul li.active {
+  color: #1b2f56;
+}
+.status-bar ul li.active span:before {
+  border-color: #1b2f56;
+}
+.status-bar ul li.active span:after {
+  content: "";
+  position: absolute;
+  background-color: #1b2f56;
+  width: 16px;
+  height: 16px;
+  border-radius: 8px;
+  left: 20px;
+  top: 6px;
+}
+section {
+  overflow: hidden;
+}
+section .radio {
+  width: 150px;
+  float: left;
+  margin: 0 10px;
+}
+section .radio:nth-last-child(3) {
+  margin-left: 0;
+}
+section .age .checkbox {
+  margin-top: 0;
+  width: 150px;
+  float: left;
+  margin: 0 10px 10px 0;
+}
+section .result {
+  margin-top: 10px;
+}
+section .result span {
+  display: block;
+  color: #25579c;
+  font-size: 32px;
+  background-color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+}
+.face-area {
+  margin-top: 230px;
+  width: 382px;
+  height: 562px;
+  background-image: url('../images/head.png');
+  padding: 100px 30px 0 30px;
+}
+.face-area span {
+  font-size: 44px;
+  color: #25579c;
+  display: inline-block;
+  margin: 20px 10px 8px 4px;
+}
+footer {
+  background-color: #fff;
+  padding: 45px 0;
+  margin-top: 80px;
+}

@@ -2,49 +2,205 @@
 <html>
 
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../resources/css/bootstrap.min.css">
-  <link rel="stylesheet" href="../resources/css/fontawesome.min.css">
-  <link rel="stylesheet" href="../resources/css/global.min.css">
-  <link rel="stylesheet" href="../resources/css/newcrowd.min.css">
-  <title>项目列表</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../resources/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../resources/css/fontawesome.min.css">
+    <link rel="stylesheet" href="../resources/css/global.min.css">
+    <link rel="stylesheet" href="../resources/css/rain_form.min.css">
+    <link rel="stylesheet" href="../resources/css/newcrowd.min.css">
+    <title>项目列表</title>
 </head>
-<body>
-<nav>
-	<div class="container">
-		<a class="nav-logo" href="#"><img src="../resources/images/icon_logo.png"></a>
-		<div class="nav-menu-box">
-			<ul>
-				<li><a href="#">Dashborad</a></li>
-				<li><a href="#">项目管理</a></li>
-				<li><a href="#">数据报表</a></li>
-				<li><a href="#">人群管理</a></li>
-				<li><a href="#">广告主管理</a></li>
-				<li><a href="#">媒体管理</a></li>
-				<li><a href="#">素材管理</a></li>
-			</ul>
-		</div>
-		<div class="nav-avatar-box">
-			<span>lufugang@domob.cn</span>
-			<i class="fa fa-angle-down"></i>
-			<div class="exit-box">退出</div>
-		</div>
-	</div>
-</nav>
-<ol class="breadcrumb">
-  <li><a href="index.html">项目管理</a></li>
-  <li class="active"><a href="new_crowd.html">新建项目</a></li>
-</ol>
-<div class="content">
-	<div class="container">
-	<div class="status-bar">
-		
-	</div>
-	</div>
-</div>
 
-<script type="text/javascript" src="../resources/js/jquery.min.js"></script>
-<script type="text/javascript" src="../resources/js/bootstrap.min.js"></script>
+<body>
+    <nav>
+        <div class="container">
+            <a class="nav-logo" href="#"><img src="../resources/images/icon_logo.png"></a>
+            <div class="nav-menu-box">
+                <ul>
+                    <li><a href="#">Dashborad</a></li>
+                    <li><a href="#">项目管理</a></li>
+                    <li><a href="#">数据报表</a></li>
+                    <li><a href="#">人群管理</a></li>
+                    <li><a href="#">广告主管理</a></li>
+                    <li><a href="#">媒体管理</a></li>
+                    <li><a href="#">素材管理</a></li>
+                </ul>
+            </div>
+            <div class="nav-avatar-box">
+                <span>lufugang@domob.cn</span>
+                <i class="fa fa-angle-down"></i>
+                <div class="exit-box">退出</div>
+            </div>
+        </div>
+    </nav>
+    <ol class="breadcrumb container">
+        <li><a href="index.html">项目管理</a></li>
+        <li class="active"><a href="new_crowd.html">新建项目</a></li>
+    </ol>
+    <div class="content">
+        <div class="container">
+            <div class="status-bar col-xs-offset-3">
+                <ul>
+                    <li class="active"><span>受众智选</span></li>
+                    <li><span>媒体优选</span></li>
+                    <li><span>推广标的</span></li>
+                    <li><span>项目设定</span></li>
+                </ul>
+            </div>
+            <div class="col-xs-6">
+                <section class="row">
+                    <header>
+                        <h3>基本信息</h3></header>
+                    <div class="rain col-xs-8">
+                        <span>项目名称</span>
+                        <label class="rain-layer" for="">奥迪Q3潜在人群</label>
+                    </div>
+                    <div class="rain col-xs-8">
+                        <span>所属广告主</span>
+                        <label class="rain-layer select">
+                            <select>
+                                <option>奥迪</option>
+                            </select>
+                            <i></i>
+                        </label>
+                    </div>
+                </section>
+                <section class="row">
+                    <header>
+                        <h3>条件筛选</h3></header>
+                    <div class="rain col-xs-12">
+                        <span>人群设定</span>
+                        <label class="rain-layer radio">
+                            <input type="radio" name="crowd"> 新建人群
+                        </label>
+                        <label class="rain-layer radio">
+                            <input type="radio" name="crowd"> 选择已有人群
+                        </label>
+                        <label class="rain-layer radio">
+                            <input type="radio" name="crowd"> 跳过人群选择
+                        </label>
+                    </div>
+                    <div class="rain col-xs-8">
+                        <span>所属品牌</span>
+                        <label class="rain-layer select">
+                            <select>
+                                <option>奥迪</option>
+                            </select>
+                            <i></i>
+                        </label>
+                    </div>
+                    <div class="rain col-xs-5">
+                        <span>性别</span>
+                        <div class="checkbox">
+                            <label for="male"><i class="fa fa-male"></i> 男</label>
+                            <input type="checkbox" name="male">
+                        </div>
+                        <div class="checkbox">
+                            <label for="female"><i class="fa fa-female"></i> 女</label>
+                            <input type="checkbox" name="female">
+                        </div>
+                    </div>
+                    <div class="rain col-xs-12 age">
+                        <span>年龄</span>
+                        <div class="checkbox">
+                            <label for="eighteen">18以下</label>
+                            <input type="checkbox" name="eighteen">
+                        </div>
+                        <div class="checkbox">
+                            <label for="twenty">19-29</label>
+                            <input type="checkbox" name="twenty">
+                        </div>
+                        <div class="checkbox">
+                            <label for="thrity">30-39</label>
+                            <input type="checkbox" name="thrity">
+                        </div>
+                        <div class="checkbox">
+                            <label for="fouty">40-49</label>
+                            <input type="checkbox" name="fouty">
+                        </div>
+                        <div class="checkbox">
+                            <label for="fifty">50以上</label>
+                            <input type="checkbox" name="fifty">
+                        </div>
+                    </div>
+                    <div class="rain col-xs-8">
+                        <span>日常兴趣</span>
+                        <button class="rain-layer select" data-toggle="collapse" data-target="#car" aria-expanded="false" aria-controls="car">
+                            <select>
+                                <option>汽车</option>
+                            </select>
+                            <i></i>
+                        </button>
+                        <div id="car" class="collapse rain col-xs-8">
+	                        <div class="checkbox">
+	                            <label for="">欧洲车</label>
+	                            <input type="checkbox" name="">
+	                        </div>
+	                        <div class="checkbox">
+	                            <label for="">买车族</label>
+	                            <input type="checkbox" name="">
+	                        </div>
+	                    </div>
+	                    <button class="rain-layer select" data-toggle="collapse" data-target="#life" aria-expanded="false" aria-controls="life">
+                            <select>
+                                <option>生活</option>
+                            </select>
+                            <i></i>
+                        </button>
+                        <div id="life" class="collapse rain col-xs-8">
+	                        <div class="checkbox">
+	                            <label for="">旅游</label>
+	                            <input type="checkbox" name="">
+	                        </div>
+	                        <div class="checkbox">
+	                            <label for="">美食</label>
+	                            <input type="checkbox" name="">
+	                        </div>
+	                    </div>
+	                	    
+                        
+                        <button class="rain-layer col-xs-8" for="">
+                    		<i class="fa fa-plus"></i>
+	                    </button>
+                    </div>
+                    <div class="rain col-xs-8">
+                    	<span>日覆盖受众规模</span>
+                    	<button class="btn-action">
+                    		预测
+                    	</button>
+                    	<div class="result">
+                    		<span>82,213,200</span>
+                    	</div>
+                    </div>
+                    
+                </section>
+            </div>
+            <div class="col-xs-4">
+            	<div class="face-area">
+            		<span>旅游</span>
+            		<span>买车族</span>
+            		<span>男</span>
+            		<span>女</span>
+            		<span>美食</span>
+            		<span>欧洲车</span>
+            		<span>母婴</span>
+            	</div>
+            </div>
+        </div>
+    </div>
+    <footer>
+    	<div class="container">
+    		<div class="col-xs-6 text-right">
+    			<button class="btn-cancel">取消</button>
+    		</div>
+    		<div class="col-xs-6 text-left">
+    			<button class="btn-action">下一步</button>
+    		</div>
+    	</div>
+    </footer>
+    <script type="text/javascript" src="../resources/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../resources/js/bootstrap.min.js"></script>
 </body>
-	</html>
+
+</html>
