@@ -4,6 +4,9 @@
   padding: 20px 0 10px;
   display: block;
 }
+.rain span b {
+  color: #333;
+}
 .rain .rain-layer {
   box-shadow: 2px 2px 3px #d6d6d6;
   background-color: #fff;
@@ -104,6 +107,47 @@
 .checkbox input[type="checkbox"]:focus {
   outline: 0;
 }
+.checkbox-s {
+  position: relative;
+  color: #25579c;
+  padding-left: 18px;
+}
+.checkbox-s input[type='checkbox'] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 0;
+  border-radius: 3px;
+  width: 16px;
+  height: 16px;
+  background-color: #eaeaea;
+  -webkit-appearance: none;
+  margin-top: 2px;
+}
+.checkbox-s input[type='checkbox']:checked {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 0;
+  border-radius: 3px;
+  width: 16px;
+  height: 16px;
+  background-color: #25579c;
+  -webkit-appearance: none;
+}
+.checkbox-s input[type='checkbox']:checked:before {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 15px;
+  border-width: 0 2px 2px 0;
+  border-style: solid;
+  border-color: #fff;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  right: 4px;
+  top: 0px;
+}
 .radio {
   padding-left: 35px!important;
 }
@@ -135,6 +179,10 @@ button {
   background-color: transparent;
   margin: 10px 0;
 }
+button.select {
+  text-align: left;
+  width: 150px;
+}
 .btn-download {
   width: 105px;
   height: 105px;
@@ -157,4 +205,9 @@ button {
   padding: 10px 20px;
   min-width: 150px;
   margin: 0;
+}
+a.btn-action,
+a.btn-cancel {
+  display: inline-block;
+  text-align: center;
 }

@@ -42,23 +42,35 @@
   position: relative;
 }
 .status-bar ul li.active {
-  color: #1b2f56;
+  color: #25579c;
 }
-.status-bar ul li.active span:before {
-  border-color: #1b2f56;
+.status-bar-edit {
+  width: 800px;
+  margin: 58px auto;
 }
-.status-bar ul li.active span:after {
-  content: "";
-  position: absolute;
-  background-color: #1b2f56;
-  width: 16px;
-  height: 16px;
-  border-radius: 8px;
-  left: 20px;
-  top: 6px;
-}
-section {
+.status-bar-edit ul {
   overflow: hidden;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+.status-bar-edit ul li {
+  float: left;
+  width: 25%;
+  height: 53px;
+  color: #aaa;
+  margin: 0;
+  background-color: #fff;
+  position: relative;
+  text-align: center;
+}
+.status-bar-edit ul li span {
+  position: relative;
+  display: block;
+  line-height: 53px;
+}
+.status-bar-edit ul li.active {
+  background-color: #25579c;
+  color: #fff;
 }
 section .radio {
   width: 150px;
@@ -84,6 +96,60 @@ section .result span {
   background-color: #fff;
   padding: 10px 20px;
   text-align: center;
+}
+.nav-tabs {
+  border: 0;
+}
+.nav-tabs > li > a {
+  border: 0;
+  padding: 0;
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  color: inherit;
+  background-color: transparent;
+  border: 0;
+}
+.nav-tabs > li.active > a input[type="radio"],
+.nav-tabs > li.active > a:hover input[type="radio"],
+.nav-tabs > li.active > a:focus input[type="radio"] {
+  width: 14px;
+  height: 14px;
+  border-radius: 7px;
+  background-color: #25579c;
+}
+#car-box {
+  background-color: #fff;
+  box-shadow: 2px 2px 3px #d6d6d6;
+  margin: 0 15px;
+  padding: 20px;
+}
+#car-box footer {
+  border-top: 1px solid #e7e7e7;
+  overflow: hidden;
+  margin-top: 20px;
+  padding: 20px 0 0 0;
+}
+.selected {
+  margin-left: 25px;
+}
+.selected .checkbox {
+  width: 150px;
+}
+#category {
+  box-shadow: 2px 2px 3px #d6d6d6;
+  background-color: #fff;
+  padding: 0;
+}
+#category ul li {
+  line-height: 32px;
+  color: #25579c;
+  padding-left: 15px;
+}
+#category ul li:hover {
+  background-color: #25579c;
+  color: #fff;
 }
 .face-area {
   margin-top: 230px;

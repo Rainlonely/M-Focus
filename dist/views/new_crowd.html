@@ -48,6 +48,14 @@
                     <li><span>项目设定</span></li>
                 </ul>
             </div>
+            <div class="status-bar-edit col-xs-offset-3">
+                <ul>
+                    <li class="active"><span>受众智选</span></li>
+                    <li><span>媒体优选</span></li>
+                    <li><span>推广标的</span></li>
+                    <li><span>项目设定</span></li>
+                </ul>
+            </div>
             <div class="col-xs-6">
                 <section class="row">
                     <header>
@@ -71,133 +79,230 @@
                         <h3>条件筛选</h3></header>
                     <div class="rain col-xs-12">
                         <span>人群设定</span>
-                        <label class="rain-layer radio">
-                            <input type="radio" name="crowd"> 新建人群
-                        </label>
-                        <label class="rain-layer radio">
-                            <input type="radio" name="crowd"> 选择已有人群
-                        </label>
-                        <label class="rain-layer radio">
-                            <input type="radio" name="crowd"> 跳过人群选择
-                        </label>
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active">
+                                <a href="#newCrowd" aria-controls="newCrowd" role="tab" data-toggle="tab">
+                                    <label class="rain-layer radio">
+                                        <input type="radio" name="crowd"> 新建人群
+                                    </label>
+                                </a>
+                            </li>
+                            <li role="presentation">
+                                <a href="#oldCrowd" aria-controls="oldCrowd" role="tab" data-toggle="tab">
+                                    <label class="rain-layer radio">
+                                        <input type="radio" name="crowd"> 选择已有人群
+                                    </label>
+                                </a>
+                            </li>
+                            <li role="presentation">
+                                <a href="#skip" aria-controls="skip" role="tab" data-toggle="tab">
+                                    <label class="rain-layer radio">
+                                        <input type="radio" name="crowd"> 跳过人群选择
+                                    </label>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="rain col-xs-8">
-                        <span>所属品牌</span>
-                        <label class="rain-layer select">
-                            <select>
-                                <option>奥迪</option>
-                            </select>
-                            <i></i>
-                        </label>
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="newCrowd">
+                            <div class="rain col-xs-8">
+                                <span>所属品牌</span>
+                                <label class="rain-layer select">
+                                    <select>
+                                        <option>奥迪</option>
+                                    </select>
+                                    <i></i>
+                                </label>
+                            </div>
+                            <div class="rain col-xs-5">
+                                <span>性别</span>
+                                <div class="checkbox">
+                                    <label for="male"><i class="fa fa-male"></i> 男</label>
+                                    <input type="checkbox" name="male">
+                                </div>
+                                <div class="checkbox">
+                                    <label for="female"><i class="fa fa-female"></i> 女</label>
+                                    <input type="checkbox" name="female">
+                                </div>
+                            </div>
+                            <div class="rain col-xs-12 age">
+                                <span>年龄</span>
+                                <div class="checkbox">
+                                    <label for="eighteen">18以下</label>
+                                    <input type="checkbox" name="eighteen">
+                                </div>
+                                <div class="checkbox">
+                                    <label for="twenty">19-29</label>
+                                    <input type="checkbox" name="twenty">
+                                </div>
+                                <div class="checkbox">
+                                    <label for="thrity">30-39</label>
+                                    <input type="checkbox" name="thrity">
+                                </div>
+                                <div class="checkbox">
+                                    <label for="fouty">40-49</label>
+                                    <input type="checkbox" name="fouty">
+                                </div>
+                                <div class="checkbox">
+                                    <label for="fifty">50以上</label>
+                                    <input type="checkbox" name="fifty">
+                                </div>
+                            </div>
+                            <div class="rain col-xs-8">
+                                <span>日常兴趣</span>
+                                <button class="rain-layer select" data-toggle="collapse" data-target="#car-box" aria-expanded="true" aria-controls="car-box">汽车<i></i>
+                                </button>
+                            </div>
+                            <div id="car-box" class="collapse rain col-xs-12">
+                                <div class="checkbox-s col-xs-3">
+                                    <input type="checkbox" name="fifty">
+                                    <label for="fifty">宝马</label>
+                                </div>
+                                <div class="checkbox-s col-xs-3">
+                                    <input type="checkbox" name="fifty">
+                                    <label for="fifty">本田</label>
+                                </div>
+                                <div class="checkbox-s col-xs-3">
+                                    <input type="checkbox" name="fifty">
+                                    <label for="fifty">标志雪铁龙</label>
+                                </div>
+                                <div class="checkbox-s col-xs-3">
+                                    <input type="checkbox" name="fifty">
+                                    <label for="fifty">大众</label>
+                                </div>
+                                <div class="checkbox-s col-xs-3">
+                                    <input type="checkbox" name="fifty">
+                                    <label for="fifty">宝马</label>
+                                </div>
+                                <div class="checkbox-s col-xs-3">
+                                    <input type="checkbox" name="fifty">
+                                    <label for="fifty">本田</label>
+                                </div>
+                                <div class="checkbox-s col-xs-3">
+                                    <input type="checkbox" name="fifty">
+                                    <label for="fifty">标志雪铁龙</label>
+                                </div>
+                                <div class="checkbox-s col-xs-3">
+                                    <input type="checkbox" name="fifty">
+                                    <label for="fifty">大众</label>
+                                </div>
+                                <div class="checkbox-s col-xs-3">
+                                    <input type="checkbox" name="fifty">
+                                    <label for="fifty">宝马</label>
+                                </div>
+                                <div class="checkbox-s col-xs-3">
+                                    <input type="checkbox" name="fifty">
+                                    <label for="fifty">本田</label>
+                                </div>
+                                <div class="checkbox-s col-xs-3">
+                                    <input type="checkbox" name="fifty">
+                                    <label for="fifty">标志雪铁龙</label>
+                                </div>
+                                <div class="checkbox-s col-xs-3">
+                                    <input type="checkbox" name="fifty">
+                                    <label for="fifty">大众</label>
+                                </div>
+                                <footer class="col-xs-12">
+                                    <div class="col-xs-6 text-center">
+                                        <button class="btn-cancel">取消</button>
+                                    </div>
+                                    <div class="col-xs-6 text-center">
+                                        <button class="btn-action">确定</button>
+                                    </div>
+                                </footer>
+                            </div>
+                            <div id="car" class="rain col-xs-8 selected">
+                                <div class="checkbox">
+                                    <label for="">欧洲车</label>
+                                    <input type="checkbox" name="">
+                                </div>
+                                <div class="checkbox">
+                                    <label for="">买车族</label>
+                                    <input type="checkbox" name="">
+                                </div>
+                            </div>
+                            <div class="rain col-xs-8">
+                                <button class="rain-layer select" data-toggle="collapse" data-target="#life" aria-expanded="false" aria-controls="life">生活<i></i>
+                                </button>
+                                <div id="life" class="collapse rain col-xs-8">
+                                    <div class="checkbox">
+                                        <label for="">旅游</label>
+                                        <input type="checkbox" name="">
+                                    </div>
+                                    <div class="checkbox">
+                                        <label for="">美食</label>
+                                        <input type="checkbox" name="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rain col-xs-8">
+                                <button class="rain-layer col-xs-8" data-toggle="collapse" data-target="#category">
+                                    <i class="fa fa-plus"></i>
+                                </button>
+                                <div id="category" class="collapse col-xs-6">
+                                    <ul>
+                                        <li>动漫</li>
+                                        <li>工具</li>
+                                        <li>纪录片</li>
+                                        <li>教育</li>
+                                        <li>军事</li>
+                                        <li>历史</li>
+                                        <li>女性</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="rain col-xs-8">
+                                <span>日覆盖受众规模</span>
+                                <button class="btn-action">
+                                    预测
+                                </button>
+                                <div class="result">
+                                    <span>82,213,200</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="oldCrowd">
+                            <div class="rain col-xs-8">
+                                <span>选择人群</span>
+                                <label class="rain-layer select">
+                                    <select>
+                                        <option>七月份有购车意愿的人群</option>
+                                    </select>
+                                    <i></i>
+                                </label>
+                                <span>所属品牌：<b>奥迪</b></span>
+                                <span>性别：<b>男，女</b></span>
+                                <span>年龄：<b>18以下，19-29，30-39</b></span>
+                                <span>日常兴趣：<b>欧洲车，买车族，旅游，没事，母婴</b></span>
+                                <span>日覆盖受众规模：<b>82,213,200</b></span>
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="skip"></div>
                     </div>
-                    <div class="rain col-xs-5">
-                        <span>性别</span>
-                        <div class="checkbox">
-                            <label for="male"><i class="fa fa-male"></i> 男</label>
-                            <input type="checkbox" name="male">
-                        </div>
-                        <div class="checkbox">
-                            <label for="female"><i class="fa fa-female"></i> 女</label>
-                            <input type="checkbox" name="female">
-                        </div>
-                    </div>
-                    <div class="rain col-xs-12 age">
-                        <span>年龄</span>
-                        <div class="checkbox">
-                            <label for="eighteen">18以下</label>
-                            <input type="checkbox" name="eighteen">
-                        </div>
-                        <div class="checkbox">
-                            <label for="twenty">19-29</label>
-                            <input type="checkbox" name="twenty">
-                        </div>
-                        <div class="checkbox">
-                            <label for="thrity">30-39</label>
-                            <input type="checkbox" name="thrity">
-                        </div>
-                        <div class="checkbox">
-                            <label for="fouty">40-49</label>
-                            <input type="checkbox" name="fouty">
-                        </div>
-                        <div class="checkbox">
-                            <label for="fifty">50以上</label>
-                            <input type="checkbox" name="fifty">
-                        </div>
-                    </div>
-                    <div class="rain col-xs-8">
-                        <span>日常兴趣</span>
-                        <button class="rain-layer select" data-toggle="collapse" data-target="#car" aria-expanded="false" aria-controls="car">
-                            <select>
-                                <option>汽车</option>
-                            </select>
-                            <i></i>
-                        </button>
-                        <div id="car" class="collapse rain col-xs-8">
-	                        <div class="checkbox">
-	                            <label for="">欧洲车</label>
-	                            <input type="checkbox" name="">
-	                        </div>
-	                        <div class="checkbox">
-	                            <label for="">买车族</label>
-	                            <input type="checkbox" name="">
-	                        </div>
-	                    </div>
-	                    <button class="rain-layer select" data-toggle="collapse" data-target="#life" aria-expanded="false" aria-controls="life">
-                            <select>
-                                <option>生活</option>
-                            </select>
-                            <i></i>
-                        </button>
-                        <div id="life" class="collapse rain col-xs-8">
-	                        <div class="checkbox">
-	                            <label for="">旅游</label>
-	                            <input type="checkbox" name="">
-	                        </div>
-	                        <div class="checkbox">
-	                            <label for="">美食</label>
-	                            <input type="checkbox" name="">
-	                        </div>
-	                    </div>
-	                	    
-                        
-                        <button class="rain-layer col-xs-8" for="">
-                    		<i class="fa fa-plus"></i>
-	                    </button>
-                    </div>
-                    <div class="rain col-xs-8">
-                    	<span>日覆盖受众规模</span>
-                    	<button class="btn-action">
-                    		预测
-                    	</button>
-                    	<div class="result">
-                    		<span>82,213,200</span>
-                    	</div>
-                    </div>
-                    
                 </section>
             </div>
             <div class="col-xs-4">
-            	<div class="face-area">
-            		<span>旅游</span>
-            		<span>买车族</span>
-            		<span>男</span>
-            		<span>女</span>
-            		<span>美食</span>
-            		<span>欧洲车</span>
-            		<span>母婴</span>
-            	</div>
+                <div class="face-area">
+                    <span>旅游</span>
+                    <span>买车族</span>
+                    <span>男</span>
+                    <span>女</span>
+                    <span>美食</span>
+                    <span>欧洲车</span>
+                    <span>母婴</span>
+                </div>
             </div>
         </div>
     </div>
     <footer>
-    	<div class="container">
-    		<div class="col-xs-6 text-right">
-    			<button class="btn-cancel">取消</button>
-    		</div>
-    		<div class="col-xs-6 text-left">
-    			<button class="btn-action">下一步</button>
-    		</div>
-    	</div>
+        <div class="container">
+            <div class="col-xs-6 text-right">
+                <button class="btn-cancel">取消</button>
+            </div>
+            <div class="col-xs-6 text-left">
+                <button class="btn-action">下一步</button>
+            </div>
+        </div>
     </footer>
     <script type="text/javascript" src="../resources/js/jquery.min.js"></script>
     <script type="text/javascript" src="../resources/js/bootstrap.min.js"></script>
