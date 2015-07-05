@@ -1,0 +1,206 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../resources/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../resources/css/fontawesome.min.css">
+    <link rel="stylesheet" href="../resources/css/global.min.css">
+    <link rel="stylesheet" href="../resources/css/rain_form.min.css">
+    <link rel="stylesheet" href="../resources/css/newcrowd.min.css">
+    <title>项目列表</title>
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <a class="nav-logo" href="#"><img src="../resources/images/icon_logo.png"></a>
+            <div class="nav-menu-box">
+                <ul>
+                    <li><a href="#">Dashborad</a></li>
+                    <li><a href="#">项目管理</a></li>
+                    <li><a href="#">数据报表</a></li>
+                    <li><a href="#">人群管理</a></li>
+                    <li><a href="#">广告主管理</a></li>
+                    <li><a href="#">媒体管理</a></li>
+                    <li><a href="#">素材管理</a></li>
+                </ul>
+            </div>
+            <div class="nav-avatar-box">
+                <span>lufugang@domob.cn</span>
+                <i class="fa fa-angle-down"></i>
+                <div class="exit-box">退出</div>
+            </div>
+        </div>
+    </nav>
+    <ol class="breadcrumb container">
+        <li><a href="index.html">项目管理</a></li>
+        <li class="active"><a href="new_crowd.html">新建项目</a></li>
+    </ol>
+    <div class="content">
+        <div class="container">
+            <div class="status-bar col-xs-offset-3">
+                <ul>
+                    <li class="done"><span>受众智选</span></li>
+                    <li class="done"><span>媒体优选</span></li>
+                    <li class="active"><span>推广标的</span></li>
+                    <li><span>项目设定</span></li>
+                </ul>
+            </div>
+            <div class="basic-info">
+                <h2>基本信息</h2>
+                <div class="rain">
+                    <span>推广产品</span>
+                    <label class="rain-layer radio col-xs-2">
+                        <input type="radio" name="crowd"> 新建人群
+                    </label>
+                    <label class="rain-layer radio col-xs-2">
+                        <input type="radio" name="crowd"> 新建人群
+                    </label>
+                    <label class="rain-layer radio col-xs-2">
+                        <input type="radio" name="crowd"> 新建人群
+                    </label>
+                </div>
+                <div class="rain">
+                    <span>点击URL</span>
+                    <label class="rain-layer col-xs-3">http://www.baidu.com</label>
+                </div>
+                <div class="rain">
+                    <span>展现检测</span>
+                    <label class="rain-layer col-xs-3">http://www.baidu.com</label>
+                </div>
+                <div class="rain">
+                    <span>点击检测</span>
+                    <label class="rain-layer col-xs-3">http://www.baidu.com</label>
+                </div>
+            </div>
+            <h2>上传创意素材</h2>
+        </div>
+        <div class="creative-material">
+            <div class="container">
+                <h2>
+                    <figure><img src="../resources/images/media_app_05.png"></figure>百度贴吧
+                </h2>
+                <div class="rain">
+                    <h4>Banner广告位</h4>
+                    <button class="btn-action" data-toggle="modal" data-target=".new-creative1">新建创意</button>
+                </div>
+                <div class="rain">
+                    <h4>创意预览</h4>
+                    <figure>
+                        <img src="../resources/images/example-advertise_03.jpg">
+                    </figure>
+                    <figure>
+                        <img src="../resources/images/example-advertise_03.jpg">
+                    </figure>
+                </div>
+                <div class="rain">
+                    <h4>列表信息流广告位</h4>
+                    <button class="btn-action" data-toggle="modal" data-target=".new-creative3">新建创意</button>
+                </div>
+                <div class="rain">
+                    <h4>创意预览</h4>
+                    <figure>
+                        <img src="../resources/images/example-advertise_07.jpg">
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="col-xs-6 text-right">
+                <button class="btn-cancel">取消</button>
+            </div>
+            <div class="col-xs-6 text-left">
+                <button class="btn-action">下一步</button>
+            </div>
+        </div>
+    </footer>
+    
+
+<div class="modal fade new-creative1" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">新建创意<span>｜百度贴吧Banner广告位</span></h4>
+      </div>
+      <div class="modal-body">
+        <div class="rain">
+            <p>创意名称</p>
+            <label class="rain-layer col-xs-3">
+                <input type="text" value="KFC为夏天加点料暑期投放创意">
+            </label>
+        </div>
+        <div class="rain">
+            <p>上传图片</p>
+            <div class="img-upload-box">
+                <p>点击上传</p>
+                <p>请上传800X125px尺寸的JPG或PNG图片</p>
+                <input type="file" accept=".jpg,.png">
+            </div>    
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn-cancel" data-dismiss="modal">取消</button>
+        <button type="button" class="btn-action">生成创意</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade new-creative3" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+  <div class="modal-dialog modal-md">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">新建创意<span>｜百度贴吧信息流</span></h4>
+      </div>
+      <div class="modal-body">
+        <div class="rain">
+            <p>创意名称</p>
+            <label class="rain-layer col-xs-3">
+                <input type="text" value="KFC为夏天加点料暑期投放创意">
+            </label>
+        </div>
+        <div class="rain">
+            <p>标题</p>
+            <label class="rain-layer col-xs-3">
+                <input type="text" value="" placeholder="最低7字，最多12字">
+            </label>
+        </div>
+        <div class="rain">
+            <p>简介</p>
+            <label class="rain-layer col-xs-3">
+                <input type="text" value="" placeholder="最低8字，最多16字">
+            </label>
+        </div>
+        <div class="rain">
+            <p>上传Logo图片</p>
+            <div class="img-upload-box icon-box">
+                <p>点击上传</p>
+                <p>请上传175X175px尺寸的JPG或PNG图片</p>
+                <input type="file" accept=".jpg,.png">
+            </div> 
+        </div>
+        <div class="rain">
+            <p>上传图片</p>
+            <div class="img-upload-box img-box">
+                <p>点击上传</p>
+                <p>请上传800X125px尺寸的JPG或PNG图片</p>
+                <input type="file" accept=".jpg,.png">
+            </div>    
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn-cancel" data-dismiss="modal">取消</button>
+        <button type="button" class="btn-action">生成创意</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <script type="text/javascript" src="../resources/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../resources/js/bootstrap.min.js"></script>
+
+</html>
