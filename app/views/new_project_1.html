@@ -82,23 +82,29 @@
                         <ul class="nav nav-tabs" role="tablist">
                             <li role="presentation" class="active">
                                 <a href="#newCrowd" aria-controls="newCrowd" role="tab" data-toggle="tab">
-                                    <label class="rain-layer radio">
+                                <div class="rain-layer">
+                                    <label class="radio">
                                         <input type="radio" name="crowd"> 新建人群
                                     </label>
+                                </div>
                                 </a>
                             </li>
                             <li role="presentation">
                                 <a href="#oldCrowd" aria-controls="oldCrowd" role="tab" data-toggle="tab">
-                                    <label class="rain-layer radio">
+                                <div class="rain-layer">
+                                    <label class="radio">
                                         <input type="radio" name="crowd"> 选择已有人群
                                     </label>
+                                </div>
                                 </a>
                             </li>
                             <li role="presentation">
                                 <a href="#skip" aria-controls="skip" role="tab" data-toggle="tab">
-                                    <label class="rain-layer radio">
-                                        <input type="radio" name="crowd"> 跳过人群选择
-                                    </label>
+                                    <div class="rain-layer">
+                                        <label class="radio">
+                                            <input type="radio" name="crowd"> 跳过人群选择
+                                        </label>    
+                                    </div>
                                 </a>
                             </li>
                         </ul>
@@ -306,6 +312,15 @@
     </footer>
     <script type="text/javascript" src="../resources/js/jquery.min.js"></script>
     <script type="text/javascript" src="../resources/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    $(function() {
+      $('.radio').click(function(){
+        var radioId = $(this).attr('name');
+        $('.radio').removeClass('checked')&& $(this).addClass('checked');
+        $('input[type="radio"]').removeAttr('checked') && $('#' + radioId).attr('checked', 'checked');
+      });
+    });
+    </script>
 </body>
 
 </html>

@@ -52,15 +52,21 @@
                 <h2>基本信息</h2>
                 <div class="rain">
                     <span>推广产品</span>
-                    <label class="rain-layer radio col-xs-2">
-                        <input type="radio" name="crowd"> 新建人群
-                    </label>
-                    <label class="rain-layer radio col-xs-2">
-                        <input type="radio" name="crowd"> 新建人群
-                    </label>
-                    <label class="rain-layer radio col-xs-2">
-                        <input type="radio" name="crowd"> 新建人群
-                    </label>
+                    <div class="rain-layer col-xs-2">
+                        <label class="radio">
+                            <input type="radio" name="crowd"> 新建人群
+                        </label>
+                    </div>
+                    <div class="rain-layer col-xs-2">
+                        <label class="radio ">
+                            <input type="radio" name="crowd"> 新建人群
+                        </label>
+                    </div>
+                    <div class="rain-layer col-xs-2">
+                        <label class="radio">
+                            <input type="radio" name="crowd"> 新建人群
+                        </label>
+                    </div>
                 </div>
                 <div class="rain">
                     <span>点击URL</span>
@@ -118,89 +124,95 @@
             </div>
         </div>
     </footer>
-    
-
-<div class="modal fade new-creative1" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title">新建创意<span>｜百度贴吧Banner广告位</span></h4>
-      </div>
-      <div class="modal-body">
-        <div class="rain">
-            <p>创意名称</p>
-            <label class="rain-layer col-xs-3">
-                <input type="text" value="KFC为夏天加点料暑期投放创意">
-            </label>
+    <div class="modal fade new-creative1" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">新建创意<span>｜百度贴吧Banner广告位</span></h4>
+                </div>
+                <div class="modal-body">
+                    <div class="rain">
+                        <p>创意名称</p>
+                        <label class="rain-layer col-xs-3">
+                            <input type="text" value="KFC为夏天加点料暑期投放创意">
+                        </label>
+                    </div>
+                    <div class="rain">
+                        <p>上传图片</p>
+                        <div class="img-upload-box">
+                            <p>点击上传</p>
+                            <p>请上传800X125px尺寸的JPG或PNG图片</p>
+                            <input type="file" accept=".jpg,.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn-cancel" data-dismiss="modal">取消</button>
+                    <button type="button" class="btn-action">生成创意</button>
+                </div>
+            </div>
         </div>
-        <div class="rain">
-            <p>上传图片</p>
-            <div class="img-upload-box">
-                <p>点击上传</p>
-                <p>请上传800X125px尺寸的JPG或PNG图片</p>
-                <input type="file" accept=".jpg,.png">
-            </div>    
-        </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn-cancel" data-dismiss="modal">取消</button>
-        <button type="button" class="btn-action">生成创意</button>
-      </div>
     </div>
-  </div>
-</div>
-<div class="modal fade new-creative3" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
-  <div class="modal-dialog modal-md">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title">新建创意<span>｜百度贴吧信息流</span></h4>
-      </div>
-      <div class="modal-body">
-        <div class="rain">
-            <p>创意名称</p>
-            <label class="rain-layer col-xs-3">
-                <input type="text" value="KFC为夏天加点料暑期投放创意">
-            </label>
+    <div class="modal fade new-creative3" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">新建创意<span>｜百度贴吧信息流</span></h4>
+                </div>
+                <div class="modal-body">
+                    <div class="rain">
+                        <p>创意名称</p>
+                        <label class="rain-layer col-xs-3">
+                            <input type="text" value="KFC为夏天加点料暑期投放创意">
+                        </label>
+                    </div>
+                    <div class="rain">
+                        <p>标题</p>
+                        <label class="rain-layer col-xs-3">
+                            <input type="text" value="" placeholder="最低7字，最多12字">
+                        </label>
+                    </div>
+                    <div class="rain">
+                        <p>简介</p>
+                        <label class="rain-layer col-xs-3">
+                            <input type="text" value="" placeholder="最低8字，最多16字">
+                        </label>
+                    </div>
+                    <div class="rain">
+                        <p>上传Logo图片</p>
+                        <div class="img-upload-box icon-box">
+                            <p>点击上传</p>
+                            <p>请上传175X175px尺寸的JPG或PNG图片</p>
+                            <input type="file" accept=".jpg,.png">
+                        </div>
+                    </div>
+                    <div class="rain">
+                        <p>上传图片</p>
+                        <div class="img-upload-box img-box">
+                            <p>点击上传</p>
+                            <p>请上传800X125px尺寸的JPG或PNG图片</p>
+                            <input type="file" accept=".jpg,.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn-cancel" data-dismiss="modal">取消</button>
+                    <button type="button" class="btn-action">生成创意</button>
+                </div>
+            </div>
         </div>
-        <div class="rain">
-            <p>标题</p>
-            <label class="rain-layer col-xs-3">
-                <input type="text" value="" placeholder="最低7字，最多12字">
-            </label>
-        </div>
-        <div class="rain">
-            <p>简介</p>
-            <label class="rain-layer col-xs-3">
-                <input type="text" value="" placeholder="最低8字，最多16字">
-            </label>
-        </div>
-        <div class="rain">
-            <p>上传Logo图片</p>
-            <div class="img-upload-box icon-box">
-                <p>点击上传</p>
-                <p>请上传175X175px尺寸的JPG或PNG图片</p>
-                <input type="file" accept=".jpg,.png">
-            </div> 
-        </div>
-        <div class="rain">
-            <p>上传图片</p>
-            <div class="img-upload-box img-box">
-                <p>点击上传</p>
-                <p>请上传800X125px尺寸的JPG或PNG图片</p>
-                <input type="file" accept=".jpg,.png">
-            </div>    
-        </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn-cancel" data-dismiss="modal">取消</button>
-        <button type="button" class="btn-action">生成创意</button>
-      </div>
     </div>
-  </div>
-</div>
     <script type="text/javascript" src="../resources/js/jquery.min.js"></script>
     <script type="text/javascript" src="../resources/js/bootstrap.min.js"></script>
-
+    <script type="text/javascript">
+    $(function() {
+      $('label').click(function(){
+        var radioId = $(this).attr('name');
+        $('label').removeClass('checked')&& $(this).addClass('checked');
+        $('input[type="radio"]').removeAttr('checked') && $('#' + radioId).attr('checked', 'checked');
+      });
+    });
+    </script>
 </html>

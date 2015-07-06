@@ -101,14 +101,6 @@
   background-color: #25579c;
   color: #fff;
 }
-section .radio {
-  width: 150px;
-  float: left;
-  margin: 0 10px;
-}
-section .radio:nth-last-child(3) {
-  margin-left: 0;
-}
 section .age .checkbox {
   margin-top: 0;
   width: 150px;
@@ -129,6 +121,14 @@ section .result span {
 .nav-tabs {
   border: 0;
 }
+.nav-tabs .rain-layer {
+  width: 150px;
+  float: left;
+  margin: 0 10px;
+}
+.nav-tabs .rain-layer:first-child {
+  margin-left: 0;
+}
 .nav-tabs > li > a {
   border: 0;
   padding: 0;
@@ -139,14 +139,6 @@ section .result span {
   color: inherit;
   background-color: transparent;
   border: 0;
-}
-.nav-tabs > li.active > a input[type="radio"],
-.nav-tabs > li.active > a:hover input[type="radio"],
-.nav-tabs > li.active > a:focus input[type="radio"] {
-  width: 14px;
-  height: 14px;
-  border-radius: 7px;
-  background-color: #25579c;
 }
 #car-box {
   background-color: #fff;

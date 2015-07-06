@@ -21,6 +21,7 @@
   line-height: 20px;
   padding: 8px 15px;
   color: #25579c;
+  margin-left: 10px;
 }
 .rain .rain-layer label {
   font-size: 12px;
@@ -84,26 +85,26 @@ input[type='text'] {
   position: relative;
   padding-left: 0;
 }
-.checkbox label:after {
-  content: "";
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  border-radius: 3px;
-  background-color: #25579c;
-  right: 0;
-  top: 2px;
-}
 .checkbox input[type='checkbox'] {
+  -webkit-appearance: none;
   position: absolute;
   right: 12px;
   top: 10px;
   width: 16px;
   height: 16px;
-  background-color: transparent;
-  -webkit-appearance: none;
+  border-radius: 3px;
+  border: 2px solid #999;
+}
+.checkbox input[type="checkbox"]:hover {
+  background-color: #25579c;
+  border: 2px solid #25579c;
 }
 .checkbox input[type='checkbox']:checked {
+  background-color: #25579c;
+  border: 2px solid #25579c;
+}
+.checkbox input[type='checkbox']:checked:after {
+  content: "";
   position: absolute;
   width: 7px;
   height: 15px;
@@ -112,8 +113,8 @@ input[type='text'] {
   border-color: #fff;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
-  right: 13px;
-  top: 7px;
+  right: 0px;
+  top: -2px;
 }
 .checkbox input[type="checkbox"]:active,
 .checkbox input[type="checkbox"]:focus {
@@ -162,21 +163,34 @@ input[type='text'] {
 }
 .radio {
   padding-left: 35px!important;
+  position: relative;
+  margin-top: 0;
 }
 .radio input[type="radio"] {
-  width: 14px;
-  height: 14px;
-  border-radius: 7px;
-  border: 1px solid #25579c;
-  appearance: normal;
-  -moz-appearance: none;
-  -webkit-appearance: none;
+  display: none;
 }
-.radio input[type="radio"]:checked {
-  width: 14px;
-  height: 14px;
-  border-radius: 7px;
+.radio:before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 8px;
+  left: 0;
+  top: 2px;
+  border: 1px solid #25579c;
+}
+.radio:hover:before {
+  border: 1px solid #25579c;
   background-color: #25579c;
+}
+.checked:before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 8px;
+  border: 5px solid #25579c;
+  background-color: #fff;
 }
 .radio + .radio,
 .checkbox + .checkbox {
@@ -210,6 +224,14 @@ button.select {
   min-width: 150px;
   margin: 0;
 }
+.btn-action:hover {
+  background: linear-gradient(#2e6bbf, #25579c);
+}
+.btn-action:focus,
+.btn-action:active {
+  background: linear-gradient(#25579b, #193b6b);
+  outline: none;
+}
 .btn-cancel {
   border: 1px solid #e0e0e0;
   color: #333;
@@ -217,6 +239,14 @@ button.select {
   padding: 10px 20px;
   min-width: 150px;
   margin: 0;
+}
+.btn-cancel:hover {
+  background: linear-gradient(#ffffff, #ecebeb);
+}
+.btn-cancel:focus,
+.btn-cancel:active {
+  background: linear-gradient(#ffffff, #d8d7d7);
+  outline: none;
 }
 a.btn-action,
 a.btn-cancel {
@@ -245,4 +275,7 @@ a.btn-cancel {
   position: absolute;
   top: 0;
   left: 0;
+}
+.img-upload-box:hover {
+  border: 2px dashed #25579c;
 }
