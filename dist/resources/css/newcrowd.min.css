@@ -185,27 +185,33 @@ section .result span {
   display: inline-block;
   margin: 20px 10px 8px 4px;
 }
+.media-managment-box,
 .media-box {
   background-color: #fff;
   height: 300px;
   padding-top: 80px;
   position: relative;
 }
+.media-managment-box li a,
 .media-box li a {
   padding: 20px 20px 15px 20px;
 }
+.media-managment-box li figure,
 .media-box li figure {
   width: 102px;
   margin: 0 auto 20px auto;
 }
+.media-managment-box li figure img,
 .media-box li figure img {
   width: 100%;
 }
+.media-managment-box li figure figcaption,
 .media-box li figure figcaption {
   margin-top: 20px;
   color: #999;
   text-align: center;
 }
+.media-managment-box li span,
 .media-box li span {
   height: 24px;
   line-height: 24px;
@@ -217,12 +223,15 @@ section .result span {
   display: block;
   font-size: 12px;
 }
+.media-managment-box li span.select,
 .media-box li span.select {
   background-color: #25579c;
 }
+.media-managment-box li.active a,
 .media-box li.active a {
   background-color: #f5f5f5;
 }
+.media-managment-box .arrow,
 .media-box .arrow {
   width: 100px;
   height: 100px;
@@ -232,22 +241,32 @@ section .result span {
   text-align: center;
   line-height: 116px;
 }
+.media-managment-box .arrow i,
 .media-box .arrow i {
   color: #fff;
 }
+.media-managment-box .arrow.available,
 .media-box .arrow.available {
   background-color: #25579c;
 }
+.media-managment-box .pull-left,
 .media-box .pull-left {
   left: 0;
 }
+.media-managment-box .pull-right,
 .media-box .pull-right {
   right: 0;
+}
+.media-managment-box {
+  padding-top: 25px;
 }
 .tab-pane {
   overflow: hidden;
   width: 100%;
   margin-top: 60px;
+}
+.tab-pane h2 .rain {
+  display: inline-block;
 }
 .tab-pane table {
   margin-top: 40px;
@@ -274,6 +293,10 @@ section .result span {
 }
 .tab-pane table tbody tr:nth-child(odd) {
   background-color: #eeeeee;
+}
+.tab-pane table tbody tr:hover {
+  background-color: #536175;
+  color: #fff;
 }
 .basic-info .rain .radio {
   margin: 0 10px;

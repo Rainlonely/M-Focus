@@ -215,11 +215,12 @@ section {
 
 
 
+.media-managment-box,
 .media-box{
     background-color: #fff;
     height: 300px;
     padding-top: 80px;
-    position: relative;
+    position: relative;    
     li{
         a{ padding:20px 20px 15px 20px;}
         figure{
@@ -264,11 +265,14 @@ section {
     .pull-left{left: 0;}
     .pull-right{right: 0;}
 }
-
+.media-managment-box{
+    padding-top: 25px;
+}
 .tab-pane{
     overflow: hidden;
     width: 100%;
     margin-top: 60px;
+    h2 .rain{display: inline-block;}
     table{
         margin-top: 40px;
         thead{
@@ -293,6 +297,7 @@ section {
                 }
             }
             tr:nth-child(odd){background-color: #eeeeee;}
+            tr:hover{background-color: #536175; color: #fff;}
         }
         //td:nth-child(5){width: 210px;}
     }
