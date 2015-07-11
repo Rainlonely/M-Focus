@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../resources/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../resources/css/fontawesome.min.css">
+    <link rel="stylesheet" href="../resources/css/global.min.css">
+    <link rel="stylesheet" href="../resources/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="../resources/css/rain_form.min.css">
+    <link rel="stylesheet" href="../resources/css/adviser_edit.min.css">
+    
+    <title>广告主管理</title>
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <a class="nav-logo" href="#"><img src="../resources/images/icon_logo.png"></a>
+            <div class="nav-menu-box">
+                <ul>
+                    <li><a href="#">Dashborad</a></li>
+                    <li><a href="#">项目管理</a></li>
+                    <li><a href="#">数据报表</a></li>
+                    <li><a href="#">人群管理</a></li>
+                    <li><a href="#">广告主管理</a></li>
+                    <li><a href="#">媒体管理</a></li>
+                    <li><a href="#">素材管理</a></li>
+                </ul>
+            </div>
+            <div class="nav-avatar-box">
+                <span>lufugang@domob.cn</span>
+                <i class="fa fa-angle-down"></i>
+                <div class="exit-box">退出</div>
+            </div>
+        </div>
+    </nav>
+    <ol class="breadcrumb container">
+        <li><a href="adviser_management.html">广告主管理</a></li>
+        <li class="active"><a href="adviser_new.html">编辑广告主</a></li>
+    </ol>
+    <div class="content">
+        <div class="container">
+            <div class="rain col-xs-12">
+                <h3>编辑广告主信息</h3>
+                <span>广告主名称：<b>奥迪</b></span>
+                <span>资质主体名称：<b>税务登记证</b></span>
+                <span>广告主网站名称</span>
+                <label class="rain-layer text col-xs-4">
+                    <input type="text" value="一汽－大众奥迪官方网站">        
+                </label>
+                <div class="clear"></div>
+                <span >广告主网站地址</span>
+                <label class="rain-layer text col-xs-4">
+                    <input type="text" value="https://www.audi.cn">        
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="white-content">
+        <div class="container">
+            <h3>广告主资质</h3>
+            <div class="gray-box rain col-xs-12">
+                <span>税务登记证</span>
+                <div class="img-upload-box box-200">
+                    <p>税务登记证预览</p>
+                    <input type="file" accept=".jpg,.png">
+                </div>
+                <span>营业执照</span>
+                <div class="img-upload-box box-200">
+                    <p>营业执照预览</p>
+                    <input type="file" accept=".jpg,.png">
+                </div>
+                <span>其他资质</span>
+                <label class="rain-layer text col-xs-4">
+                    <input type="text" placehold="请输入资质名称">
+                </label>
+                <div class="clear"></div>
+                <div class="img-upload-box box-200">
+                    <p>点击上传</p>
+                    <input type="file" accept=".jpg,.png">
+                </div>
+                <div class="space-4">
+                    <button class="btn-action">添加资质</button>    
+                </div>
+            </div>    
+            <h3>品牌</h3>
+            <div class="gray-box rain col-xs-12">
+                <span>品牌名称</span>
+                <label class="rain-layer text col-xs-4">
+                    <input type="text" value="Audi">
+                </label>
+                <div class="clear"></div>
+                <span>品牌LOGO</span>
+                <div class="img-upload-box box-100">
+                    <p>点击上传</p>
+                    <input type="file" accept=".jpg,.png">
+                </div>
+                <div class="space-4">
+                    <button class="btn-action">添加品牌</button>
+                </div>
+            </div>    
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="col-xs-12 text-center">
+                <button class="btn-action">完成</button>
+            </div>
+        </div>
+    </footer>
+    <!-- /.modal -->
+    <script type="text/javascript" src="../resources/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../resources/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../resources/js/bootstrap-select.min.js"></script>
+    <script type="text/javascript">
+        $('.selectpicker').selectpicker();
+    </script>
+</body>
+
+</html>
