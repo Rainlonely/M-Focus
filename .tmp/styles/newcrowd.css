@@ -152,10 +152,10 @@ section .result span {
   margin-top: 20px;
   padding: 20px 0 0 0;
 }
-.selected {
+.subSelected {
   margin-left: 25px;
 }
-.selected .checkbox {
+.subSelected .checkbox {
   width: 150px;
 }
 #category {
@@ -335,17 +335,17 @@ footer {
 .modal .modal-footer {
   text-align: center;
 }
-.option-box .rain-layer {
-  height: auto;
+.setting-box {
+  overflow: hidden;
 }
-.option-box .rain-layer table {
-  width: 100%;
+.option-box {
+  overflow: hidden;
 }
-.option-box .rain-layer table .checkbox {
+.option-box table .checkbox {
   box-shadow: none;
 }
-.option-box .rain-layer table th,
-.option-box .rain-layer table td {
+.option-box table th,
+.option-box table td {
   border: 1px solid #f5f5f5;
 }
 .option-box .fa-mobile {
@@ -387,6 +387,9 @@ footer {
 #citySetting .provice-box .collapse .checkbox:first-child {
   border-top: 1px solid transparent;
 }
+#citySetting .collapsing {
+  display: none;
+}
 #citySetting .container-fluid {
   position: relative;
 }
@@ -394,6 +397,7 @@ footer {
   position: absolute;
   top: 24px;
   right: 60px;
+  width: 92px;
 }
 #citySetting #express-box span {
   font-size: 12px;
@@ -413,4 +417,13 @@ footer {
 #citySetting #express-box .collapse li:hover {
   background-color: #25579c;
   color: #fff;
+}
+#citySetting span span.pull-right {
+  color: #25579c;
+}
+#citySetting .selected-city-list .checkbox {
+  width: 100%;
+}
+#citySetting .selected-city-list .checkbox i {
+  cursor: pointer;
 }

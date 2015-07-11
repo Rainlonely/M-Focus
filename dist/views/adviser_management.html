@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../resources/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../resources/css/fontawesome.min.css">
+    <link rel="stylesheet" href="../resources/css/global.min.css">
+    <!-- <link rel="stylesheet" href="../resources/css/projectlist.min.css"> -->
+    <link rel="stylesheet" type="text/css" href="../resources/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="../resources/css/report.min.css">
+    <link rel="stylesheet" href="../resources/css/rain_form.min.css">
+    <title>项目列表</title>
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <a class="nav-logo" href="#"><img src="../resources/images/icon_logo.png"></a>
+            <div class="nav-menu-box">
+                <ul>
+                    <li><a href="#">Dashborad</a></li>
+                    <li><a href="#">项目管理</a></li>
+                    <li><a href="#">数据报表</a></li>
+                    <li><a href="#">人群管理</a></li>
+                    <li><a href="#">广告主管理</a></li>
+                    <li><a href="#">媒体管理</a></li>
+                    <li><a href="#">素材管理</a></li>
+                </ul>
+            </div>
+            <div class="nav-avatar-box">
+                <span>lufugang@domob.cn</span>
+                <i class="fa fa-angle-down"></i>
+                <div class="exit-box">退出</div>
+            </div>
+        </div>
+    </nav>
+    <div class="content">
+        <div class="container">
+            <div class="row select-project">
+                <div class="col-xs-10">选择广告主
+	                <select class="selectpicker col-xs-10" data-style="btn-rain-layer" data-live-search="true">
+	                    <option>奥迪</option>
+	                    <option>奥迪</option>
+	                    <option>奥迪</option>
+	                </select>
+                </div>
+                <div class="col-xs-2 text-right">
+                	<button class="btn-ghost">新建广告主</button>	
+                </div>
+                
+            </div>
+            <div class="tab-box">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="col-xs-6 active" ><a class="text-center" href="#summary" aria-controls="home" role="tab" data-toggle="tab">统计概要</a></li>
+                    <li role="presentation" class="col-xs-6 "><a class="text-center" href="#basic-info" aria-controls="profile" role="tab" data-toggle="tab">基本信息</a></li>
+                </ul>
+                <div class="tab-content">
+			    	<div role="tabpanel" class="tab-pane active" id="summary">
+			    		<div class="row over-all">
+			    			<div class="col-xs-4 text-center"> <span>8</span>
+			    			<p>项目数</p></div>
+			    			<div class="col-xs-4 text-center"><span>10</span><p>品牌数</p></div>
+			    			<div class="col-xs-4 text-center"><span>10</span><p>人群数</p></div>
+			    		</div>
+			    		<div class="row cost-box">
+			    			<div class="col-xs-6">
+			    				<header>总消耗：<span>￥235,365,465.00</span></header>
+			    			</div>
+			    			<div class="col-xs-6">
+			    				<header>今日消耗：<span>￥235,365,465.00</span></header>
+			    			</div>
+			    		</div>
+			    	</div>
+					<div role="tabpanel" class="tab-pane" id="basic-info">
+						<div class="col-xs-4">
+							<h3>基本信息</h3>
+						</div>
+						<div class="col-xs-8 text-right">
+							<button class="btn-ghost">新建广告主</button>	
+						</div>		
+						<div class="rain col-xs-8">
+						<span>广告主名称：<b>奥迪</b></span>
+						<span>资质主体名称：<b>税务登记证</b></span>
+						<span>广告主网站名称：<b>一汽－大众奥迪官方网站</b></span>
+						<span>广告主网站地址：<b>http://www.audi.cn</b></span>
+	                    </div>
+	                    <h3 class="col-xs-12">广告主资质</h3>
+	                    <div class="rain col-xs-6">
+	                    	<span>版权登记证：</span>
+	                    	<figure class="img-copyright">
+	                    		<img src="../resources/images/sample-img_03.jpg">
+	                    	</figure>
+	                    	<span>营业执照：</span>
+	                    	<figure class="img-copyright">
+	                    		<img src="../resources/images/sample-img_03.jpg">
+	                    	</figure>
+	                    </div>
+	                    <h3 class="col-xs-12">品牌</h3>
+	                    <div class="rain col-xs-6">
+	                    	<span>品牌名称：<b>Audi</b></span>
+	                    	<span>品牌LOGO：</span>
+	                    	<figure class="img-brand-logo">
+	                    		<img src="../resources/images/sample-img_07.jpg">
+	                    	</figure>
+	                    </div>
+					</div>
+				</div>
+            </div>
+        </div>
+    </div>
+    <footer>
+    </footer>
+    <script type="text/javascript" src="../resources/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../resources/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../resources/js/bootstrap-select.min.js"></script>
+    <script type="text/javascript">
+    	$('.selectpicker').selectpicker();
+    </script>
+</body>
+
+</html>

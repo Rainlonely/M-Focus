@@ -1,7 +1,11 @@
-.select-project .col-xs-1 {
+.select-project .col-xs-1,
+.select-project .col-xs-2 {
   line-height: 50px;
   font-size: 16px;
   color: #95a1b2;
+}
+.tab-content {
+  margin-bottom: 40px;
 }
 .tab-box {
   background-color: #fff;
@@ -31,7 +35,6 @@
   height: 132px;
   border-bottom: 1px solid #ddd;
   line-height: 131px;
-  margin: 0 50px;
 }
 .tab-box .filter-box span {
   margin: 0 30px;
@@ -66,13 +69,16 @@
 }
 .tab-box .filter-box .select i {
   box-shadow: none;
+  top: 16px;
 }
 .tab-box .filter-box .select i:after {
   bottom: 0;
 }
+.tab-box .tab-pane {
+  padding: 0 50px 50px;
+}
 .tab-box .chart-box {
   height: 500px;
-  margin: 0 50px;
   border-bottom: 1px solid #ddd;
   position: relative;
 }
@@ -83,7 +89,6 @@
 }
 .tab-box .custom-box {
   margin-top: 50px;
-  padding: 0 50px;
   overflow: hidden;
 }
 .tab-box .custom-box .option-box {
@@ -102,8 +107,37 @@
 .tab-box button {
   float: right;
 }
+.tab-box .over-all {
+  padding: 60px 0;
+  border-bottom: 1px solid #ddd;
+}
+.tab-box .over-all .col-xs-4 span {
+  font-size: 72px;
+  color: #25579c;
+}
+.tab-box .over-all .col-xs-4 p {
+  font-size: 24px;
+}
+.tab-box .cost-box {
+  margin-top: 40px;
+}
+.tab-box .cost-box .col-xs-6 {
+  min-height: 410px;
+}
+.tab-box .cost-box .col-xs-6 header span {
+  color: #25579c;
+  font-size: 24px;
+}
+.tab-box .cost-box .col-xs-6:nth-child(1) {
+  border-right: 1px solid #ddd;
+}
+.tab-box #basic-info {
+  overflow: hidden;
+}
+.tab-box #basic-info .img-brand-logo {
+  border: 2px dashed #999;
+}
 table {
-  margin: 0 50px;
   width: 1040px;
 }
 table th {
@@ -118,4 +152,41 @@ table tbody tr:nth-child(odd) {
 table .process-bar:before,
 table .process-bar:after {
   left: 30px;
+}
+#crowd-management tbody tr {
+  height: 50px;
+}
+#crowd-management tbody tr td:nth-child(5) {
+  color: #25579c;
+  cursor: pointer;
+}
+#crowd-management tbody tr td:nth-child(5).actived {
+  color: #95a1b2;
+}
+.data-area {
+  margin-top: 40px;
+  background-color: #fff;
+  padding: 30px 50px;
+}
+.data-area h3 span {
+  font-size: 14px;
+  color: #95a1b2;
+}
+.data-area .chart {
+  background-color: #f5f5f5;
+}
+.data-area .interest {
+  height: 600px;
+  border-right: 1px solid #fff;
+}
+.data-area .gender,
+.data-area .age {
+  height: 300px;
+  border-left: 1px solid #fff;
+}
+.data-area .gender {
+  border-bottom: 1px solid #fff;
+}
+.data-area .age {
+  border-top: 1px solid #fff;
 }

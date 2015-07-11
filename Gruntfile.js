@@ -201,6 +201,18 @@ module.exports = function (grunt) {
                         cwd: 'bower_components/bootstrap-datetimepicker/build/css',
                         src: ['bootstrap-datetimepicker.min.css'],
                         dest: '<%= web.dist %>/resources/css'
+                    },
+                    {
+                        expand: true,
+                        cwd: 'bower_components/bootstrap-select/dist/js',
+                        src: ['bootstrap-select.min.js'],
+                        dest: '<%= web.dist %>/resources/js'
+                    },
+                    {
+                        expand: true,
+                        cwd: 'bower_components/bootstrap-select/dist/css',
+                        src: ['bootstrap-select.min.css'],
+                        dest: '<%= web.dist %>/resources/css'
                     }
                 ]
             },

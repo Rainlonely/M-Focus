@@ -175,7 +175,7 @@ section {
     }
 }
 
-.selected {
+.subSelected {
     margin-left: 25px;
     .checkbox {
         width: 150px;
@@ -360,16 +360,17 @@ footer {
         text-align: center;
     }
 }
+.setting-box{
+    overflow: hidden;
+}
 .option-box{
-    .rain-layer{
-        height: auto;
-        table{
-            width: 100%;
-            .checkbox{
-                box-shadow: none;
-            }
-            th,td{border: 1px solid #f5f5f5;}
+    overflow: hidden;
+    
+    table{
+        .checkbox{
+            box-shadow: none;
         }
+        th,td{border: 1px solid #f5f5f5;}
     }
     .fa-mobile{ font-size: 18px;}
     i + b{margin-left: 10px;}
@@ -405,12 +406,13 @@ footer {
             .checkbox:first-child{border-top: 1px solid transparent;}
         }    
     }
-    
+    .collapsing{display: none;}
     .container-fluid{position: relative;}
     #express-box{
         position: absolute;
         top: 24px;
         right: 60px;
+        width: 92px;
         span{
             font-size: 12px;
             color: #25579c;
@@ -429,7 +431,15 @@ footer {
                 background-color: #25579c;
                 color: #fff;
             }
-
+        }
+    }
+    span{
+        span.pull-right{color: @brand-primary;}
+    }
+    .selected-city-list{
+        .checkbox{
+            width: 100%;
+            i{cursor: pointer;}
         }
     }
 }

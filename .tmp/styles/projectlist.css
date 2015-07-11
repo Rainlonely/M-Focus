@@ -10,8 +10,6 @@
 }
 .project-list-box header button {
   margin: 20px 0 10px 0;
-  border: 2px solid;
-  border-radius: 17px;
 }
 .project-list-box table thead tr th {
   padding: 20px 10px;

@@ -1,16 +1,5 @@
 .rain {
   clear: both;
-  overflow: hidden;
-  padding: 5px 0;
-}
-.rain span {
-  font-size: 12px;
-  color: #95a1b2;
-  padding: 20px 0 10px;
-  display: block;
-}
-.rain span b {
-  color: #333;
 }
 .rain .rain-layer {
   box-shadow: 2px 2px 3px #d6d6d6;
@@ -26,12 +15,14 @@
 .rain .rain-layer label {
   font-size: 12px;
 }
-input[type='text'] {
-  border: 0;
-  width: 100%;
+.rain > span {
+  font-size: 12px;
+  color: #95a1b2;
+  padding: 20px 0 10px;
+  display: block;
 }
-.price input[type='text'] {
-  width: 95%;
+.rain > span b {
+  color: #333;
 }
 .select {
   position: relative;
@@ -205,9 +196,73 @@ button {
   background-color: transparent;
   margin: 10px 0;
 }
+button:focus {
+  outline: 0;
+}
 button.select {
   text-align: left;
   width: 150px;
+}
+.btn-rain-layer {
+  background-color: #fff;
+  border-radius: 0;
+  border: 1px solid #f1f1f1;
+  box-shadow: 2px 2px 3px #d6d6d6;
+  color: #25579c;
+}
+.btn-rain-layer:active {
+  box-shadow: 2px 2px 3px #d6d6d6;
+}
+.btn-rain-layer:focus {
+  outline: 0;
+}
+.dropdown-menu .bs-searchbox {
+  position: relative;
+}
+.dropdown-menu .bs-searchbox input[type='text'] {
+  border: 1px solid #dad9da;
+  border-radius: 0;
+  box-shadow: none;
+}
+.dropdown-menu .bs-searchbox:after {
+  position: absolute;
+  content: "\f002";
+  font: normal normal normal 14px/1 FontAwesome;
+  right: 13px;
+  top: 13px;
+  color: #25579c;
+}
+.dropdown-menu li a span.text {
+  color: #999;
+}
+.dropdown-menu li:hover a {
+  background-color: #25579c;
+}
+.dropdown-menu li:hover a span.text {
+  color: #fff;
+}
+.dropdown-menu li.active a {
+  background-color: #1b2f56;
+}
+.btn-ghost {
+  height: 40px;
+  border-radius: 20px;
+  font-size: 14px;
+  line-height: 36px;
+  color: #25579c;
+  padding: 0 12px;
+  border: 2px solid #25579c;
+  background-color: transparent;
+}
+.btn-ghost:hover {
+  background-color: #25579c;
+  color: #fff;
+}
+.btn-ghost:focus,
+.btn-ghost:active {
+  background-color: #193b6b;
+  outline: 0;
+  color: #fff;
 }
 .btn-download {
   width: 105px;
@@ -278,4 +333,26 @@ a.btn-cancel {
 }
 .img-upload-box:hover {
   border: 2px dashed #25579c;
+}
+.text {
+  border: 1px solid transparent;
+}
+.text input[type='text'] {
+  width: 95%;
+  border: 0;
+  color: #333;
+}
+.text input[type='text']:focus {
+  outline: none;
+}
+.text:hover {
+  border: 1px solid #25579c;
+}
+.text.disabled {
+  background-color: #ebecee;
+}
+.validate-status {
+  color: #db290a;
+  clear: both;
+  padding-left: 25px;
 }

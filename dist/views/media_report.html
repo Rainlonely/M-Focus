@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../resources/css/fontawesome.min.css">
     <link rel="stylesheet" href="../resources/css/global.min.css">
     <!-- <link rel="stylesheet" href="../resources/css/projectlist.min.css"> -->
+    <link rel="stylesheet" type="text/css" href="../resources/css/bootstrap-select.min.css">
     <link rel="stylesheet" href="../resources/css/report.min.css">
     <link rel="stylesheet" href="../resources/css/rain_form.min.css">
     <title>项目列表</title>
@@ -39,16 +40,13 @@
         <div class="container">
             <div class="row select-project">
                 <div class="col-xs-1">选择项目</div>
-                <div class="col-xs-11">
-                    <label class="select">
-                        <select>
+                
+                        <select class="selectpicker col-xs-11" data-style="btn-rain-layer" data-live-search="true">
                             <option>奥迪五月投放</option>
                             <option>奥迪五月投放</option>
                             <option>奥迪五月投放</option>
                         </select>
-                        <i></i>
-                    </label>
-                </div>
+                
             </div>
             <div class="tab-box">
                 <!-- Nav tabs -->
@@ -269,7 +267,6 @@
 						</table>
 					</div>
 				</div>
-
             </div>
         </div>
     </div>
@@ -296,6 +293,10 @@
     </div>
     <script type="text/javascript" src="../resources/js/jquery.min.js"></script>
     <script type="text/javascript" src="../resources/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../resources/js/bootstrap-select.min.js"></script>
+    <script type="text/javascript">
+    	$('.selectpicker').selectpicker();
+    </script>
 </body>
 
 </html>

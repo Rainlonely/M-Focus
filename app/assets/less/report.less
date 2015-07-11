@@ -1,12 +1,12 @@
 @import 'variables.less';
 .select-project {
-    .col-xs-1 {
+    .col-xs-1 ,.col-xs-2{
         line-height: 50px;
         font-size: 16px;
         color: #95a1b2;
     }
 }
-
+.tab-content{margin-bottom: 40px;}
 .tab-box {
     background-color: #fff;
     margin-top: 40px;
@@ -23,7 +23,7 @@
         }
         li.active a {
             color: #333;
-            border-bottom: 4px solid @brand-primary;
+            border-bottom: 4px solid #1b2f56;
             border-left: 0;
             border-right: 0;
             border-top: 0;
@@ -34,7 +34,7 @@
         height: 132px;
         border-bottom: 1px solid #ddd;
         line-height: 131px;
-        margin: 0 50px;
+        //margin: 0 50px;
         span {
             margin: 0 30px;
             padding: 5px 0;
@@ -44,7 +44,7 @@
             margin-left: 0;
         }
         span.active {
-            border-bottom: 2px solid @brand-primary;
+            border-bottom: 2px solid #1b2f56;
         }
         .select {
             width: 125px;
@@ -67,15 +67,19 @@
             }
             i {
                 box-shadow: none;
+                top: 16px;
             }
             i:after {
                 bottom: 0;
             }
         }
     }
+    .tab-pane{
+        padding: 0 50px 50px;
+    }
     .chart-box {
         height: 500px;
-        margin: 0 50px;
+        //margin: 0 50px;
         border-bottom: 1px solid #ddd;
         position: relative;
         button {
@@ -86,7 +90,7 @@
     }
     .custom-box {
         margin-top: 50px;
-        padding: 0 50px;
+       // padding: 0 50px;
         overflow: hidden;
         .option-box {
             float: left;
@@ -105,10 +109,37 @@
     button {
         float: right;
     }
+    .over-all{
+        padding: 60px 0;
+        border-bottom: 1px solid #ddd;
+        .col-xs-4{
+            span{ font-size:  72px; color: @brand-primary;}
+            p{ font-size:24px;}
+        }
+    }
+    .cost-box{
+        margin-top: 40px;
+        .col-xs-6{
+            min-height: 410px;
+            header{
+                span{
+                    color: @brand-primary;
+                    font-size: 24px;
+                }
+            }
+        }
+        .col-xs-6:nth-child(1){border-right: 1px solid #ddd;}
+    }
+    #basic-info{
+        overflow: hidden;
+        .img-brand-logo{
+            border: 2px dashed #999;
+        }
+    }
 }
 
 table {
-    margin: 0 50px;
+    //margin: 0 50px;
     width: 1040px;
     th {
         text-align: center;
@@ -123,4 +154,34 @@ table {
     .process-bar:after{
     	left: 30px;
     }
+}
+#crowd-management{
+    tbody{
+        tr{
+            height: 50px;
+            td:nth-child(5){color: @brand-primary; cursor: pointer;}
+            td:nth-child(5).actived{color: #95a1b2;}
+        }    
+    }
+}
+.data-area{
+    margin-top: 40px;
+    background-color: #fff;
+    padding: 30px 50px;
+    h3{span{
+        font-size: 14px;
+        color: #95a1b2;
+    }}
+    .chart{background-color: #f5f5f5;}
+    .interest{
+        height: 600px;
+        border-right: 1px solid #fff;
+    }
+
+    .gender,.age{
+        height: 300px;
+        border-left: 1px solid #fff;
+    }
+    .gender{border-bottom: 1px solid #fff;}
+    .age{border-top: 1px solid #fff;}
 }
