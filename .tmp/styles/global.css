@@ -66,6 +66,12 @@ nav .nav-avatar-box:hover .exit-box {
 .space-4 {
   margin: 20px 0;
 }
+.text-140 {
+  width: 140px;
+}
+.text-50 {
+  width: 50px;
+}
 footer {
   background-color: #fff;
   padding: 45px 0;

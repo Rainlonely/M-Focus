@@ -335,6 +335,7 @@ a.btn-cancel {
 }
 .text {
   border: 1px solid transparent;
+  margin-top: 10px;
 }
 .text input[type='text'] {
   width: 95%;

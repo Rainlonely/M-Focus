@@ -1,0 +1,240 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../resources/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../resources/css/fontawesome.min.css">
+    <link rel="stylesheet" href="../resources/css/global.min.css">
+    <link rel="stylesheet" href="../resources/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="../resources/css/rain_form.min.css">
+    <link rel="stylesheet" href="../resources/css/adviser_edit.min.css">
+    
+    
+    <title>媒体管理</title>
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <a class="nav-logo" href="#"><img src="../resources/images/icon_logo.png"></a>
+            <div class="nav-menu-box">
+                <ul>
+                    <li><a href="#">Dashborad</a></li>
+                    <li><a href="#">项目管理</a></li>
+                    <li><a href="#">数据报表</a></li>
+                    <li><a href="#">人群管理</a></li>
+                    <li><a href="#">广告主管理</a></li>
+                    <li><a href="#">媒体管理</a></li>
+                    <li><a href="#">素材管理</a></li>
+                </ul>
+            </div>
+            <div class="nav-avatar-box">
+                <span>lufugang@domob.cn</span>
+                <i class="fa fa-angle-down"></i>
+                <div class="exit-box">退出</div>
+            </div>
+        </div>
+    </nav>
+    <ol class="breadcrumb container">
+        <li><a href="adviser_management.html">媒体管理</a></li>
+        <li class="active"><a href="adviser_new.html">新建媒体</a></li>
+    </ol>
+    <div class="content">
+        <div class="container">
+            <div class="rain col-xs-12">
+                <h3>新建媒体</h3>
+                <span>媒体名称：</span>
+                <label class="rain-layer text col-xs-4">
+                    <input type="text" value="">
+                </label>
+                <div class="clear"></div>
+                <span>上传Logo图片</span>
+                <div class="img-upload-box box-200">
+                    <p>点击上传</p>
+                    <p>请上传175x175px的JPG或PNG图片</p>
+                    <input type="file" accept=".jpg,.png">
+                </div>
+                <div class="clear"></div>
+                <span>月活跃用户</span>
+                <label class="rain-layer text col-xs-4">
+                    <input type="text" value="">        
+                </label>
+                <div class="clear"></div>
+                <span>日活跃用户</span>
+                <label class="rain-layer text col-xs-4">
+                    <input type="text" value="">        
+                </label>
+                <div class="clear"></div>
+                <span >操作系统</span>
+                <select class="selectpicker" data-style="btn-rain-layer">
+                    <option>iOS</option>
+                    <option>iOS</option>
+                    <option>iOS</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="white-content">
+        <div class="container">
+            <h3>广告位一</h3>
+            <div class="gray-box rain col-xs-12">
+                <span>广告位名称</span>
+                <label class="rain-layer text col-xs-4">
+                    <input type="text" value="">        
+                </label>
+                <div class="clear"></div>
+                <span>形式</span>
+                <select class="selectpicker" data-style="btn-rain-layer">
+                    <option>请选择</option>
+                    <option>Banner</option>
+                    <option>Banner</option>
+                </select>
+                <span>位置说明</span>
+                <label class="rain-layer text col-xs-12">
+                    <input type="text" placehold="">
+                </label>
+                <div class="clear"></div>
+                <span>素材定义</span>
+                <select class="selectpicker" data-style="btn-rain-layer">
+                    <option>请选择</option>
+                    <option>图片</option>
+                    <option>图片</option>
+                </select>
+                <div class="space-4">
+                    <button class="btn-action">添加素材</button>
+                </div>
+                <span>备注</span>
+                <label class="rain-layer text col-xs-12">
+                    <input type="text" placehold="">
+                </label>
+                <span>广告截屏</span>
+                <div class="img-upload-box box-160">
+                    <p>点击上传</p>
+                    <input type="file" accept=".jpg,.png">
+                </div>
+            </div>    
+            <h3>广告位二</h3>
+            <div class="gray-box rain col-xs-12">
+                <span>广告位信息流</span>
+                <label class="rain-layer text col-xs-4">
+                    <input type="text" value="">
+                </label>
+                <div class="clear"></div>
+                <span>形式</span>
+                <select class="selectpicker" data-style="btn-rain-layer">
+                    <option>前贴片</option>
+                    <option>信息流广告</option>
+                    <option>信息流广告</option>
+                </select>
+                <div class="clear"></div>
+                <span>位置说明</span>
+                <label class="rain-layer text col-xs-4">
+                    <input type="text" value="">
+                </label>
+                <div class="clear"></div>
+                <span>素材定义</span>
+                <div class="row">
+                    <select class="selectpicker col-xs-2" data-style="btn-rain-layer">
+                        <option>文字</option>
+                        <option>图片</option>
+                        <option>视频</option>
+                    </select>
+                    <div class="col-xs-4">
+                     <label>素材名称：</label>
+                    <label class="rain-layer text text-140">
+                        <input type="text" value="">
+                    </label>
+                    </div>
+                    
+                    <div class="col-xs-3">
+                    <label>最少字数：</label>
+                    <label class="rain-layer text text-50">
+                        <input type="text" value="">
+                    </label>
+                    </div>
+                    <div class="col-xs-3">
+                    <label>最多字数：</label>
+                    <label class="rain-layer text text-50">
+                        <input type="text" value="">
+                    </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <select class="selectpicker col-xs-2" data-style="btn-rain-layer">
+                        <option>文字</option>
+                        <option>图片</option>
+                        <option>视频</option>
+                    </select>
+                    <div class="col-xs-4">
+                     <label>素材名称：</label>
+                    <label class="rain-layer text text-140">
+                        <input type="text" value="标题">
+                    </label>
+                    </div>
+                    
+                    <div class="col-xs-3">
+                    <label>最少字数：</label>
+                    <label class="rain-layer text text-50">
+                        <input type="text" value="">
+                    </label>
+                    </div>
+                    <div class="col-xs-3">
+                    <label>最多字数：</label>
+                    <label class="rain-layer text text-50">
+                        <input type="text" value="">
+                    </label>
+                    </div>
+                </div>    
+                <div class="row">
+                    <select class="selectpicker col-xs-2" data-style="btn-rain-layer">
+                        <option>文字</option>
+                        <option>图片</option>
+                        <option>视频</option>
+                    </select>
+                    <div class="col-xs-4">
+                     <label>素材名称：</label>
+                    <label class="rain-layer text text-140">
+                        <input type="text" value="">
+                    </label>
+                    </div>
+                </div>    
+                <div class="space-4">
+                    <button class="btn-action">添加素材</button>
+                </div>
+                <span>备注</span>
+                <label class="rain-layer text col-xs-12">
+                    <input type="text" value="">
+                </label>
+                <span>广告截屏</span>
+                <div class="img-upload-box box-160">
+                    <p>点击上传</p>
+                    <input type="file" accept=".jpg,.png">
+                </div>
+            </div>
+            <div class="add-media-adviser col-xs-12 text-center">
+                <i class="fa fa-plus"> 添加广告位 </i>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="col-xs-6 text-right">
+                <button class="btn-cancel">取消</button>
+            </div>
+            <div class="col-xs-6 text-left">
+                <button class="btn-action">保存</button>
+            </div>
+        </div>
+    </footer>
+    <!-- /.modal -->
+    <script type="text/javascript" src="../resources/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../resources/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../resources/js/bootstrap-select.min.js"></script>
+    <script type="text/javascript">
+        $('.selectpicker').selectpicker();
+    </script>
+</body>
+
+</html>
