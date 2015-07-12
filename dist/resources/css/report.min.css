@@ -107,35 +107,36 @@
 .tab-box button {
   float: right;
 }
-.tab-box .over-all {
-  padding: 60px 0;
-  border-bottom: 1px solid #ddd;
-}
-.tab-box .over-all .col-xs-4 span {
-  font-size: 72px;
-  color: #25579c;
-}
-.tab-box .over-all .col-xs-4 p {
-  font-size: 24px;
-}
-.tab-box .cost-box {
-  margin-top: 40px;
-}
-.tab-box .cost-box .col-xs-6 {
-  min-height: 410px;
-}
-.tab-box .cost-box .col-xs-6 header span {
-  color: #25579c;
-  font-size: 24px;
-}
-.tab-box .cost-box .col-xs-6:nth-child(1) {
-  border-right: 1px solid #ddd;
-}
 .tab-box #basic-info {
   overflow: hidden;
 }
 .tab-box #basic-info .img-brand-logo {
   border: 2px dashed #999;
+}
+.over-all {
+  padding: 60px 0;
+  border-bottom: 1px solid #ddd;
+}
+.over-all .col-xs-4 span {
+  font-size: 72px;
+  color: #25579c;
+}
+.over-all .col-xs-4 p {
+  font-size: 24px;
+}
+.cost-box {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.cost-box .col-xs-6 {
+  min-height: 410px;
+}
+.cost-box .col-xs-6 header span {
+  color: #25579c;
+  font-size: 24px;
+}
+.cost-box .col-xs-6:nth-child(1) {
+  border-right: 1px solid #ddd;
 }
 table {
   width: 1040px;
