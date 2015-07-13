@@ -68,6 +68,7 @@
   border-width: 0 2px 2px 0;
   border-style: solid;
   border-color: #fff;
+  -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
   left: 24px;
   top: 0;
@@ -252,6 +253,10 @@ section .result span {
 .media-managment-box .arrow i,
 .media-box .arrow i {
   color: #fff;
+}
+.media-managment-box .arrow:hover,
+.media-box .arrow:hover {
+  background-color: #25579c;
 }
 .media-managment-box .arrow.available,
 .media-box .arrow.available {

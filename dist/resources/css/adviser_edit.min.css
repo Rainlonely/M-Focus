@@ -1,1 +1,32 @@
-.content>.container,.white-content>.container{width:786px}.content{padding-bottom:20px}.gray-box{padding-bottom:20px;margin-bottom:20px}.gray-box .row .bootstrap-select.btn-group:not(.input-group-btn),.gray-box .row .bootstrap-select.btn-group[class*=col-]{float:left}.gray-box label{display:inline-block}.add-media-adviser{border:1px solid #25579c;color:#25579c;padding:10px 0;margin-bottom:20px}.box-160{width:160px;height:280px}footer{background-color:#f5f5f5;margin-top:0}
+.content > .container,
+.white-content > .container {
+  width: 786px;
+}
+.content {
+  padding-bottom: 20px;
+}
+.gray-box {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+.gray-box .row .bootstrap-select.btn-group:not(.input-group-btn),
+.gray-box .row .bootstrap-select.btn-group[class*=col-] {
+  float: left;
+}
+.gray-box label {
+  display: inline-block;
+}
+.add-media-adviser {
+  border: 1px solid #25579c;
+  color: #25579c;
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+.box-160 {
+  width: 160px;
+  height: 280px;
+}
+footer {
+  background-color: #f5f5f5;
+  margin-top: 0;
+}

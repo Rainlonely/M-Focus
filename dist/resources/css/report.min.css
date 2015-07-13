@@ -1,1 +1,193 @@
-.select-project .col-xs-1,.select-project .col-xs-2{line-height:50px;font-size:16px;color:#95a1b2}.tab-content{margin-bottom:40px}.tab-box{background-color:#fff;margin-top:40px}.tab-box .nav-tabs{border-bottom:1px solid #ddd}.tab-box .nav-tabs li a{font-size:24px;font-weight:bolder;border-left:0;border-right:0;border-top:0;border-bottom:4px solid transparent;color:#aaa}.tab-box .nav-tabs li.active a{color:#333;border-bottom:4px solid #1b2f56;border-left:0;border-right:0;border-top:0;background-color:#fff}.tab-box .filter-box{height:132px;border-bottom:1px solid #ddd;line-height:131px}.tab-box .filter-box span{margin:0 30px;padding:5px 0;cursor:pointer}.tab-box .filter-box span:nth-child(1){margin-left:0}.tab-box .filter-box span.active{border-bottom:2px solid #1b2f56}.tab-box .filter-box .select{width:125px;margin-top:45px}.tab-box .filter-box .select select{width:125px;height:30px;font-size:14px;border-radius:15px;border:2px solid #ddd;text-align:center;padding:0 15px;box-shadow:none}.tab-box .filter-box .select .blue{border-color:#38c6e6}.tab-box .filter-box .select .yellow{border-color:#eddf46}.tab-box .filter-box .select i{box-shadow:none;top:16px}.tab-box .filter-box .select i:after{bottom:0}.tab-box .tab-pane{padding:0 50px 50px}.tab-box .chart-box{height:500px;border-bottom:1px solid #ddd;position:relative}.tab-box .chart-box button{position:absolute;right:0;bottom:0}.tab-box .custom-box{margin-top:50px;overflow:hidden}.tab-box .custom-box .option-box{float:left;width:910px;background-color:#f5f5f5;overflow:hidden}.tab-box .custom-box .option-box .col{height:105px;width:105px;text-align:center;line-height:105px;float:left}.tab-box button{float:right}.tab-box #basic-info{overflow:hidden}.tab-box #basic-info .img-brand-logo{border:2px dashed #999}.over-all{padding:60px 0;border-bottom:1px solid #ddd}.over-all .col-xs-4 span{font-size:72px;color:#25579c}.over-all .col-xs-4 p{font-size:24px}.cost-box{margin-top:40px;margin-bottom:40px}.cost-box .col-xs-6{min-height:410px}.cost-box .col-xs-6 header span{color:#25579c;font-size:24px}.cost-box .col-xs-6:nth-child(1){border-right:1px solid #ddd}table{width:1040px}table th{text-align:center}table tr{height:75px}table tbody tr:nth-child(odd){background-color:#fafafa}table .process-bar:after,table .process-bar:before{left:30px}#crowd-management tbody tr{height:50px}#crowd-management tbody tr td:nth-child(5){color:#25579c;cursor:pointer}#crowd-management tbody tr td:nth-child(5).actived{color:#95a1b2}.data-area{margin-top:40px;background-color:#fff;padding:30px 50px}.data-area h3 span{font-size:14px;color:#95a1b2}.data-area .chart{background-color:#f5f5f5}.data-area .interest{height:600px;border-right:1px solid #fff}.data-area .age,.data-area .gender{height:300px;border-left:1px solid #fff}.data-area .gender{border-bottom:1px solid #fff}.data-area .age{border-top:1px solid #fff}
+.select-project .col-xs-1,
+.select-project .col-xs-2 {
+  line-height: 50px;
+  font-size: 16px;
+  color: #95a1b2;
+}
+.tab-content {
+  margin-bottom: 40px;
+}
+.tab-box {
+  background-color: #fff;
+  margin-top: 40px;
+}
+.tab-box .nav-tabs {
+  border-bottom: 1px solid #ddd;
+}
+.tab-box .nav-tabs li a {
+  font-size: 24px;
+  font-weight: bolder;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  border-bottom: 4px solid transparent;
+  color: #aaa;
+}
+.tab-box .nav-tabs li.active a {
+  color: #333;
+  border-bottom: 4px solid #1b2f56;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  background-color: #fff;
+}
+.tab-box .filter-box {
+  height: 132px;
+  border-bottom: 1px solid #ddd;
+  line-height: 131px;
+}
+.tab-box .filter-box span {
+  margin: 0 30px;
+  padding: 5px 0;
+  cursor: pointer;
+}
+.tab-box .filter-box span:nth-child(1) {
+  margin-left: 0;
+}
+.tab-box .filter-box span.active {
+  border-bottom: 2px solid #1b2f56;
+}
+.tab-box .filter-box .select {
+  width: 125px;
+  margin-top: 45px;
+}
+.tab-box .filter-box .select select {
+  width: 125px;
+  height: 30px;
+  font-size: 14px;
+  border-radius: 15px;
+  border: 2px solid #ddd;
+  text-align: center;
+  padding: 0 15px;
+  box-shadow: none;
+}
+.tab-box .filter-box .select .blue {
+  border-color: #38c6e6;
+}
+.tab-box .filter-box .select .yellow {
+  border-color: #eddf46;
+}
+.tab-box .filter-box .select i {
+  box-shadow: none;
+  top: 16px;
+}
+.tab-box .filter-box .select i:after {
+  bottom: 0;
+}
+.tab-box .tab-pane {
+  padding: 0 50px 50px;
+}
+.tab-box .chart-box {
+  height: 500px;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+}
+.tab-box .chart-box button {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.tab-box .custom-box {
+  margin-top: 50px;
+  overflow: hidden;
+}
+.tab-box .custom-box .option-box {
+  float: left;
+  width: 910px;
+  background-color: #f5f5f5;
+  overflow: hidden;
+}
+.tab-box .custom-box .option-box .col {
+  height: 105px;
+  width: 105px;
+  text-align: center;
+  line-height: 105px;
+  float: left;
+}
+.tab-box button {
+  float: right;
+}
+.tab-box #basic-info {
+  overflow: hidden;
+}
+.tab-box #basic-info .img-brand-logo {
+  border: 2px dashed #999;
+}
+.over-all {
+  padding: 60px 0;
+  border-bottom: 1px solid #ddd;
+}
+.over-all .col-xs-4 span {
+  font-size: 72px;
+  color: #25579c;
+}
+.over-all .col-xs-4 p {
+  font-size: 24px;
+}
+.cost-box {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.cost-box .col-xs-6 {
+  min-height: 410px;
+}
+.cost-box .col-xs-6 header span {
+  color: #25579c;
+  font-size: 24px;
+}
+.cost-box .col-xs-6:nth-child(1) {
+  border-right: 1px solid #ddd;
+}
+table {
+  width: 1040px;
+}
+table th {
+  text-align: center;
+}
+table tr {
+  height: 75px;
+}
+table tbody tr:nth-child(odd) {
+  background-color: #fafafa;
+}
+table .process-bar:before,
+table .process-bar:after {
+  left: 30px;
+}
+#crowd-management tbody tr {
+  height: 50px;
+}
+#crowd-management tbody tr td:nth-child(5) {
+  color: #25579c;
+  cursor: pointer;
+}
+#crowd-management tbody tr td:nth-child(5).actived {
+  color: #95a1b2;
+}
+.data-area {
+  margin-top: 40px;
+  background-color: #fff;
+  padding: 30px 50px;
+}
+.data-area h3 span {
+  font-size: 14px;
+  color: #95a1b2;
+}
+.data-area .chart {
+  background-color: #f5f5f5;
+}
+.data-area .interest {
+  height: 600px;
+  border-right: 1px solid #fff;
+}
+.data-area .gender,
+.data-area .age {
+  height: 300px;
+  border-left: 1px solid #fff;
+}
+.data-area .gender {
+  border-bottom: 1px solid #fff;
+}
+.data-area .age {
+  border-top: 1px solid #fff;
+}
