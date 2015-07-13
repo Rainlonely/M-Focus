@@ -127,7 +127,18 @@
   box-shadow: none;
 }
 .checkbox-s input[type='checkbox'] {
-  top: 0;
+  top: 0px;
+  left: 0;
+}
+.collapsing .checkbox-s,
+.collapse .checkbox-s {
+  width: 25%;
+  padding-left: 30px;
+}
+.collapsing .checkbox-s input[type='checkbox'],
+.collapse .checkbox-s input[type='checkbox'] {
+  top: 7px;
+  left: 0;
 }
 .radio {
   padding-left: 35px!important;
