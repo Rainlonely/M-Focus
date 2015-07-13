@@ -68,7 +68,6 @@
   border-width: 0 2px 2px 0;
   border-style: solid;
   border-color: #fff;
-  -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
   left: 24px;
   top: 0;
@@ -185,12 +184,21 @@ section .result span {
   display: inline-block;
   margin: 20px 10px 8px 4px;
 }
+.media-managment-box .container,
+.media-box .container {
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
 .media-managment-box,
 .media-box {
   background-color: #fff;
   height: 300px;
   padding-top: 80px;
   position: relative;
+}
+.media-managment-box li,
+.media-box li {
+  width: 160px;
 }
 .media-managment-box li a,
 .media-box li a {
@@ -297,6 +305,9 @@ section .result span {
 .tab-pane table tbody tr:hover {
   background-color: #536175;
   color: #fff;
+}
+.basic-info .rain .rain-layer {
+  margin-right: 10px;
 }
 .basic-info .rain .radio {
   margin: 0 10px;
@@ -444,4 +455,18 @@ section .result span {
 }
 #citySetting .selected-city-list .checkbox i {
   cursor: pointer;
+}
+.swipe {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+}
+.swipe-wrap {
+  overflow: hidden;
+  position: relative;
+}
+.swipe-wrap > li {
+  float: left;
+  width: 100%;
+  position: relative;
 }

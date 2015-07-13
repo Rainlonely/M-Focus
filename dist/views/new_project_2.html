@@ -53,7 +53,7 @@
     <div class="media-box">
         <div class="container">
             <ul class="nav nav-tabs nav_apps" role="tablist">
-                <li role="presentation" class="col-xs-2">
+                <li role="presentation" class="col-xs-2 active">
                     <a href="#media1" aria-controls="media1" role="tab" data-toggle="tab">
                         <figure>
                             <img src="../resources/images/media_app_03.png">
@@ -212,5 +212,29 @@
     </footer>
     <script type="text/javascript" src="../resources/js/jquery.min.js"></script>
     <script type="text/javascript" src="../resources/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    $(function() {
+            var sliderBoxLength = $('.nav-tabs li').length * 160;
+            $('.nav-tabs').css('width', sliderBoxLength);
+            var moveLength;
+            $(".pull-left.arrow").on('click',function(){
+               moveLength =  $(".media-box .container").scrollLeft();
+               var nextPos = moveLength-160;
+               //alert(nextPos);
+               //if(nextPos > 0){$(".pull-left.arrow").addClass('available');}
+               //else{ $(".pull-left.arrow").addClass('available'); }
+              $(".media-box .container").scrollLeft(nextPos);
+            });
+            $(".pull-right.arrow").on('click',function(){
+               moveLength =  $(".media-box .container").scrollLeft();
+               var nextPos = moveLength+160;
+               //alert(nextPos);
+               //if (nextPos >0) {$(".pull-left.arrow").addClass('available');}
+               //if (nextPos >= sliderBoxLength) { $(".pull-right.arrow").removeClass('available');}
+               //else {$(".pull-right.arrow").addClass('available');}
+              $(".media-box .container").scrollLeft(nextPos);  
+            })
+        })
+    </script>
 </body>
     </html>

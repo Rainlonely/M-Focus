@@ -65,7 +65,8 @@
         border-top: 10px solid #25579c;
     }
 }
-.checkbox{
+.checkbox,
+.checkbox-s{
 	position: relative;
 	width: 100%;
 	color: #25579c;
@@ -112,48 +113,16 @@
 	}
 	input[type="checkbox"]:active,
 	input[type="checkbox"]:focus{outline: 0;}
+	input[type="checkbox"]:disabled{
+		background-color: #f5f5f5;
+	}
+
 }
 
 .checkbox-s{
-	position: relative;
-	color: #25579c;
-	padding-left: 18px;
-	input[type='checkbox']{
-		position: absolute;
-		top: 0;
-		left: 0;
-		border: 0;
-		border-radius: 3px;
-		width: 16px;
-		height: 16px;
-		background-color: #eaeaea;
-		-webkit-appearance: none;
-		margin-top: 2px;
-	}
-	input[type='checkbox']:checked{
-		position: absolute;
-		top: 0;
-		left: 0;
-		border: 0;
-		border-radius: 3px;
-		width: 16px;
-		height: 16px;
-		background-color: #25579c;
-		-webkit-appearance: none;
-	}
-	input[type='checkbox']:checked:before{
-		content: "";
-		position: absolute;
-	    width: 7px;
-	    height: 15px;
-	    border-width: 0 2px 2px 0;
-	    border-style: solid;
-	    border-color: #fff;
-	    -webkit-transform: rotate(45deg);
-	    transform: rotate(45deg);
-	    right: 4px;
-	    top: 0px;
-	}
+	background-color: transparent;
+	box-shadow: none;
+	input[type='checkbox']{top: 0}
 }
 
 .radio{
@@ -355,5 +324,5 @@ a.btn-cancel{
 .validate-status{
 	color: #db290a;
 	clear: both;
-	padding-left: 25px;
+	padding-left: 15px;
 }

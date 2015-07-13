@@ -194,6 +194,12 @@ module.exports = function (grunt) {
                     },
                     {
                         expand: true,
+                        cwd: 'bower_components/jssor-slider/js',
+                        src: ['jssor.slider.mini.js'],
+                        dest: '<%= web.dist %>/resources/js'
+                    },
+                    {
+                        expand: true,
                         cwd: 'bower_components/smalot-bootstrap-datetimepicker/js',
                         src: ['bootstrap-datetimepicker.min.js'],
                         dest: '<%= web.dist %>/resources/js'

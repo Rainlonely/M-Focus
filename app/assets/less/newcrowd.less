@@ -213,7 +213,13 @@ section {
 }
 
 
-
+.media-managment-box,
+.media-box{
+    .container{
+        overflow-y: hidden;
+        overflow-x: scroll;
+    }
+}
 
 .media-managment-box,
 .media-box{
@@ -222,6 +228,7 @@ section {
     padding-top: 80px;
     position: relative;    
     li{
+        width: 160px;
         a{ padding:20px 20px 15px 20px;}
         figure{
             width: 102px;
@@ -304,12 +311,14 @@ section {
 }
 .basic-info{
     .rain{
+        .rain-layer{margin-right: 10px;}
         .radio{
             margin: 0 10px;
             color: #25579c;
         }
         label{color: #333;}
     }
+
 }
 .creative-material{
     background-color: #fff;
@@ -443,4 +452,19 @@ section {
             i{cursor: pointer;}
         }
     }
+}
+
+.swipe {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+}
+.swipe-wrap {
+  overflow: hidden;
+  position: relative;
+}
+.swipe-wrap > li {
+  float:left;
+  width:100%;
+  position: relative;
 }
