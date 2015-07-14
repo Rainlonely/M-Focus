@@ -369,9 +369,6 @@ section .result span {
 .modal .modal-footer {
   text-align: center;
 }
-.setting-box {
-  overflow: hidden;
-}
 .option-box {
   overflow: hidden;
 }
