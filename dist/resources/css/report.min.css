@@ -10,6 +10,7 @@
 .tab-box {
   background-color: #fff;
   margin-top: 40px;
+  overflow: hidden;
 }
 .tab-box .nav-tabs {
   border-bottom: 1px solid #ddd;
@@ -22,6 +23,7 @@
   border-top: 0;
   border-bottom: 4px solid transparent;
   color: #aaa;
+  padding: 26px 0;
 }
 .tab-box .nav-tabs li.active a {
   color: #333;
@@ -119,6 +121,7 @@
 }
 .over-all .col-xs-4 span {
   font-size: 72px;
+  font-weight: bold;
   color: #25579c;
 }
 .over-all .col-xs-4 p {
