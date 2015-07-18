@@ -2,8 +2,8 @@ nav {
   margin-bottom: 10px;
 }
 .status-bar {
-  margin-top: 58px;
-  margin-bottom: 58px;
+  margin-top: 0px;
+  margin-bottom: 30px;
 }
 .status-bar ul {
   overflow: hidden;
@@ -200,6 +200,8 @@ label[for="female"] {
 }
 .media-managment-box .container,
 .media-box .container {
+  width: 900px;
+  padding: 0;
   overflow-y: hidden;
   overflow-x: scroll;
 }
@@ -207,16 +209,16 @@ label[for="female"] {
 .media-box {
   background-color: #fff;
   height: 300px;
-  padding-top: 80px;
+  padding-top: 50px;
   position: relative;
 }
 .media-managment-box li,
 .media-box li {
-  width: 160px;
+  width: 150px;
 }
 .media-managment-box li a,
 .media-box li a {
-  padding: 20px 20px 15px 20px;
+  padding: 20px 10px 44px 10px;
 }
 .media-managment-box li figure,
 .media-box li figure {
@@ -238,7 +240,7 @@ label[for="female"] {
   height: 24px;
   line-height: 24px;
   border-radius: 12px;
-  padding: 0 10px;
+  padding: 0 15px;
   background-color: #aaa;
   color: #fff;
   text-align: center;
@@ -251,7 +253,7 @@ label[for="female"] {
 }
 .media-managment-box li.active a,
 .media-box li.active a {
-  background-color: #f5f5f5;
+  background-color: #f5f5f5!important;
 }
 .media-managment-box .arrow,
 .media-box .arrow {
@@ -284,7 +286,10 @@ label[for="female"] {
   right: 0;
 }
 .media-managment-box {
-  padding-top: 25px;
+  padding-top: 20px;
+}
+.media-managment-box li a {
+  padding: 20px 10px 20px 10px;
 }
 .tab-pane {
   overflow: hidden;
@@ -293,6 +298,12 @@ label[for="female"] {
 }
 .tab-pane h2 .rain {
   display: inline-block;
+}
+.tab-pane span {
+  color: #aaa;
+}
+.tab-pane span b {
+  color: #333;
 }
 .tab-pane table {
   margin-top: 40px;
@@ -311,6 +322,9 @@ label[for="female"] {
 }
 .tab-pane table thead tr th:nth-child(5) {
   width: 210px;
+}
+.tab-pane table tbody {
+  font-size: 12px;
 }
 .tab-pane table tbody tr td .checkbox-s {
   width: 16px;

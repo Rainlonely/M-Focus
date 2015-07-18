@@ -12,9 +12,6 @@
   margin: 20px 0 10px 0;
   padding: 0 30px;
 }
-.project-list-box table {
-  font-size: 12px;
-}
 .project-list-box table thead tr th {
   padding: 20px 10px;
 }
@@ -27,6 +24,9 @@
 .project-list-box table thead tr th:nth-child(4),
 .project-list-box table thead tr th:nth-child(5) {
   width: 174px;
+}
+.project-list-box table tbody {
+  font-size: 12px;
 }
 .project-list-box table tbody tr td {
   padding: 20px 10px;

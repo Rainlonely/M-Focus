@@ -1,6 +1,5 @@
-.select-project .col-xs-1,
-.select-project .col-xs-2 {
-  line-height: 35px;
+.select-project {
+  line-height: 36px;
   font-size: 16px;
   color: #95a1b2;
 }
@@ -30,7 +29,6 @@
 }
 .tab-box .nav-tabs li a:hover {
   background-color: transparent;
-  padding: 26px 0;
 }
 .tab-box .nav-tabs li.active a {
   color: #333;

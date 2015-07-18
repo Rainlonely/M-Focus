@@ -1,8 +1,8 @@
 @import "variables.less";
 nav{margin-bottom: 10px;}
 .status-bar {
-    margin-top: 58px;
-    margin-bottom: 58px;
+    margin-top: 0px;
+    margin-bottom: 30px;
     ul {
         overflow: hidden;
         margin: 0 auto;
@@ -216,6 +216,8 @@ label[for="female"]{
 .media-managment-box,
 .media-box{
     .container{
+        width: 900px;
+        padding: 0;
         overflow-y: hidden;
         overflow-x: scroll;
     }
@@ -225,11 +227,11 @@ label[for="female"]{
 .media-box{
     background-color: #fff;
     height: 300px;
-    padding-top: 80px;
+    padding-top: 50px;
     position: relative;    
     li{
-        width: 160px;
-        a{ padding:20px 20px 15px 20px;}
+        width: 150px;
+        a{ padding:20px 10px 44px 10px;}
         figure{
             width: 102px;
             margin:0 auto 20px auto;
@@ -244,7 +246,7 @@ label[for="female"]{
             height: 24px;
             line-height: 24px;
             border-radius: 12px;
-            padding: 0 10px;
+            padding: 0 15px;
             background-color: #aaa;
             color: #fff;
             text-align: center;
@@ -256,7 +258,7 @@ label[for="female"]{
         }
     }
     li.active{
-        a{ background-color: #f5f5f5;}
+        a{ background-color: #f5f5f5!important;}
     }
     .arrow{
         width: 100px;
@@ -274,13 +276,20 @@ label[for="female"]{
     .pull-right{right: 0;}
 }
 .media-managment-box{
-    padding-top: 25px;
+    padding-top: 20px;
+    li a{
+        padding: 20px 10px 20px 10px;
+    }
 }
 .tab-pane{
     overflow: hidden;
     width: 100%;
     margin-top: 60px;
     h2 .rain{display: inline-block;}
+    span{
+        color: #aaa;
+        b{ color: #333;}
+    }
     table{
         margin-top: 40px;
         thead{
@@ -295,6 +304,7 @@ label[for="female"]{
             }
         }
         tbody{
+            font-size: 12px;
             tr{
                 td{
                     .checkbox-s{
