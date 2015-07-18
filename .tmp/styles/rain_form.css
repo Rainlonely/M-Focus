@@ -17,7 +17,7 @@
 .rain > span {
   font-size: 12px;
   color: #95a1b2;
-  padding: 20px 0 10px;
+  padding: 20px 0 5px;
   display: block;
 }
 .rain > span b {
@@ -68,7 +68,7 @@
   color: #25579c;
   background-color: #fff;
   box-shadow: 2px 2px 3px #d6d6d6;
-  padding: 10px;
+  padding: 8px 14px;
 }
 .checkbox label,
 .checkbox-s label {
@@ -82,7 +82,7 @@
   -webkit-appearance: none;
   position: absolute;
   right: 12px;
-  top: 10px;
+  top: 6px;
   width: 16px;
   height: 16px;
   border-radius: 3px;
@@ -176,9 +176,23 @@ button {
 button:focus {
   outline: 0;
 }
+.btn:focus,
+.btn:active,
+.btn:focus.btn:active {
+  outline: none!important;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
 button.select {
   text-align: left;
   width: 150px;
+}
+.bootstrap-select .dropdown-toggle:focus {
+  outline: none!important;
+  ouline-offset: 0;
+}
+.btn-group.open .dropdown-toggle {
+  box-shadow: none;
 }
 .btn-rain-layer {
   background-color: #fff;
@@ -192,6 +206,58 @@ button.select {
 }
 .btn-rain-layer:focus {
   outline: 0;
+}
+.btn-select-yellow {
+  height: 30px;
+  font-size: 14px;
+  border-radius: 15px;
+  border: 2px solid #ddd;
+  text-align: center;
+  padding: 0 15px;
+  box-shadow: none;
+  border-color: #eddf46;
+}
+.btn-select-yellow .filter-option {
+  padding: 4px 0!important;
+}
+.btn-select-yellow .caret {
+  right: -10px !important;
+}
+.btn-select-blue {
+  height: 30px;
+  font-size: 14px;
+  border-radius: 15px;
+  border: 2px solid #ddd;
+  text-align: center;
+  padding: 0 15px;
+  box-shadow: none;
+  border-color: #38c6e6;
+}
+.btn-select-blue .filter-option {
+  padding: 4px 0!important;
+}
+.btn-select-blue .caret {
+  right: -10px !important;
+}
+.btn-select-gray {
+  height: 30px;
+  font-size: 14px;
+  border-radius: 15px;
+  border: 2px solid #ddd;
+  text-align: center;
+  padding: 0 15px;
+  box-shadow: none;
+  border-color: #ddd;
+}
+.btn-select-gray .filter-option {
+  padding: 4px 0!important;
+}
+.btn-select-gray .caret {
+  right: -10px !important;
+}
+.dropdown-menu {
+  border-radius: 0;
+  left: 14px;
 }
 .dropdown-menu .bs-searchbox {
   position: relative;
@@ -221,6 +287,9 @@ button.select {
 .dropdown-menu li.active a {
   background-color: #1b2f56;
 }
+.bootstrap-select.btn-group .dropdown-menu {
+  min-width: 97%;
+}
 .btn-ghost {
   height: 40px;
   border-radius: 20px;
@@ -245,7 +314,11 @@ button.select {
   width: 105px;
   height: 105px;
   background-color: #f5f5f5;
+  background-image: url(../images/icon_download.png);
+  background-position: center 29px ;
+  background-repeat: no-repeat;
   -webkit-appearance: none;
+  padding-top: 72px;
   border: 0;
   color: #25579c;
 }

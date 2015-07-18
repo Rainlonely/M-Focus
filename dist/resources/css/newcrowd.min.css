@@ -1,3 +1,6 @@
+nav {
+  margin-bottom: 10px;
+}
 .status-bar {
   margin-top: 58px;
   margin-bottom: 58px;
@@ -140,6 +143,16 @@ section .result span {
   background-color: transparent;
   border: 0;
 }
+label[for="male"] {
+  background-image: url(../images/icon_gender_male.png);
+  background-repeat: no-repeat;
+  padding-left: 25px;
+}
+label[for="female"] {
+  background-image: url(../images/icon_gender_female.png);
+  background-repeat: no-repeat;
+  padding-left: 25px;
+}
 #car-box {
   background-color: #fff;
   box-shadow: 2px 2px 3px #d6d6d6;
@@ -177,7 +190,7 @@ section .result span {
   width: 382px;
   height: 562px;
   background-image: url('../images/head.png');
-  padding: 100px 30px 0 30px;
+  padding: 150px 40px 70px 40px;
 }
 .face-area span {
   font-size: 44px;

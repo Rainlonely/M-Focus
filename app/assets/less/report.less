@@ -1,7 +1,7 @@
 @import 'variables.less';
 .select-project {
     .col-xs-1 ,.col-xs-2{
-        line-height: 50px;
+        line-height: 35px;
         font-size: 16px;
         color: #95a1b2;
     }
@@ -12,6 +12,9 @@
     margin-top: 40px;
     .nav-tabs {
         border-bottom: 1px solid #ddd;
+        .col-xs-6{
+            padding: 0;
+        }
         li a {
             font-size: 24px;
             font-weight: bolder;
@@ -20,10 +23,14 @@
             border-top: 0;
             border-bottom: 4px solid transparent;
             color: #aaa;
+            line-height: 67px;
+        }
+        li a:hover{
+            background-color: transparent;
         }
         li.active a {
             color: #333;
-            border-bottom: 4px solid #1b2f56;
+            border-bottom: 4px solid #25579c;
             border-left: 0;
             border-right: 0;
             border-top: 0;
@@ -46,33 +53,33 @@
         span.active {
             border-bottom: 2px solid #1b2f56;
         }
-        .select {
-            width: 125px;
-            margin-top: 45px;
-            select {
-                width: 125px;
-                height: 30px;
-                font-size: 14px;
-                border-radius: 15px;
-                border: 2px solid #ddd;
-                text-align: center;
-                padding: 0 15px;
-                box-shadow: none;
-            }
-            .blue {
-                border-color: #38c6e6;
-            }
-            .yellow {
-                border-color: #eddf46;
-            }
-            i {
-                box-shadow: none;
-                top: 16px;
-            }
-            i:after {
-                bottom: 0;
-            }
-        }
+        // .select {
+        //     width: 125px;
+        //     margin-top: 45px;
+        //     select {
+        //         width: 125px;
+        //         height: 30px;
+        //         font-size: 14px;
+        //         border-radius: 15px;
+        //         border: 2px solid #ddd;
+        //         text-align: center;
+        //         padding: 0 15px;
+        //         box-shadow: none;
+        //     }
+        //     .blue {
+        //         border-color: #38c6e6;
+        //     }
+        //     .yellow {
+        //         border-color: #eddf46;
+        //     }
+        //     i {
+        //         box-shadow: none;
+        //         top: 16px;
+        //     }
+        //     i:after {
+        //         bottom: 0;
+        //     }
+        // }
     }
     .tab-pane{
         padding: 0 50px 50px;
@@ -185,4 +192,7 @@ table {
     }
     .gender{border-bottom: 1px solid #fff;}
     .age{border-top: 1px solid #fff;}
+}
+.btn-new-adviser{
+    margin-top: 20px;
 }

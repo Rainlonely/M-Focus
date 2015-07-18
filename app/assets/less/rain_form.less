@@ -21,7 +21,7 @@
 .rain > span{
 	font-size: 12px;
 	color: #95a1b2;
-	padding: 20px 0 10px;
+	padding: 20px 0 5px;
 	display: block;
 	b{color: #333;}
 	}
@@ -72,7 +72,7 @@
 	color: #25579c;
 	background-color: #fff;
 	box-shadow: 2px 2px 3px #d6d6d6;
-	padding:10px;
+	padding:8px 14px;
 	label{
 		display: inline-block;
 		width: 100%;
@@ -83,7 +83,7 @@
 		-webkit-appearance: none;
 		position: absolute;
 		right: 12px;
-		top: 10px;
+		top: 6px;
 		width: 16px;
 		height: 16px;
 		border-radius: 3px;
@@ -167,10 +167,20 @@ button{
 	margin: 0;
 }
 button:focus{outline: 0;}
+.btn:focus,.btn:active,.btn:focus.btn:active{
+    outline: none!important;
+    box-shadow: none;
+    -webkit-box-shadow:none;
+}
 button.select{
 	text-align: left;
 	width: 150px;
 }
+.bootstrap-select .dropdown-toggle:focus{
+	outline: none!important;
+	ouline-offset:0;
+}
+.btn-group.open .dropdown-toggle{box-shadow: none;}
 .btn-rain-layer{
     background-color: #fff;
     border-radius: 0;
@@ -180,7 +190,53 @@ button.select{
 }
 .btn-rain-layer:active{box-shadow: 2px 2px 3px #d6d6d6;}
 .btn-rain-layer:focus{outline: 0;}
+
+.btn-select-yellow{
+	height: 30px;
+	font-size: 14px;
+	border-radius: 15px;
+	border: 2px solid #ddd;
+	text-align: center;
+	padding: 0 15px;
+	box-shadow: none;
+	border-color: #eddf46;
+	.filter-option{padding: 4px 0!important;}
+	.caret{
+		right: -10px!important;
+	}
+}
+.btn-select-blue{
+	height: 30px;
+	font-size: 14px;
+	border-radius: 15px;
+	border: 2px solid #ddd;
+	text-align: center;
+	padding: 0 15px;
+	box-shadow: none;
+	border-color: #38c6e6;
+	.filter-option{padding: 4px 0!important;}
+	.caret{
+		right: -10px!important;
+	}
+}
+.btn-select-gray{
+	height: 30px;
+	font-size: 14px;
+	border-radius: 15px;
+	border: 2px solid #ddd;
+	text-align: center;
+	padding: 0 15px;
+	box-shadow: none;
+	border-color: #ddd;
+	.filter-option{padding: 4px 0!important;}
+	.caret{
+		right: -10px!important;
+	}
+}
+
 .dropdown-menu{
+	border-radius: 0;
+	left: 14px;
 	.bs-searchbox{
 		position: relative;
 		input[type='text']{
@@ -212,6 +268,10 @@ button.select{
 		}
 	}
 }
+.bootstrap-select.btn-group .dropdown-menu{
+	min-width: 97%;
+
+}
 
 .btn-ghost{
 	//margin: 20px 0 10px 0;
@@ -239,7 +299,11 @@ button.select{
 	width: 105px;
 	height: 105px;
 	background-color: #f5f5f5;
+	background-image: url(../images/icon_download.png);
+	background-position: center 29px ;
+	background-repeat: no-repeat;
 	-webkit-appearance:none;
+	padding-top: 72px;
 	border: 0;
 	color: #25579c;
 }

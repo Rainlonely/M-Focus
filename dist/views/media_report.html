@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="../resources/css/bootstrap.min.css">
     <link rel="stylesheet" href="../resources/css/fontawesome.min.css">
     <link rel="stylesheet" href="../resources/css/global.min.css">
-    <!-- <link rel="stylesheet" href="../resources/css/projectlist.min.css"> -->
     <link rel="stylesheet" type="text/css" href="../resources/css/bootstrap-select.min.css">
     <link rel="stylesheet" href="../resources/css/report.min.css">
     <link rel="stylesheet" href="../resources/css/rain_form.min.css">
@@ -18,7 +17,12 @@
     <nav>
         <div class="container">
             <a class="nav-logo" href="#"><img src="../resources/images/icon_logo.png"></a>
-            <div class="nav-menu-box">
+            <div class="nav-avatar-box pull-right">
+                <span>lufugang@domob.cn</span>
+                <i class="fa fa-angle-down"></i>
+                <div class="exit-box">退出</div>
+            </div>
+            <div class="nav-menu-box pull-right">
                 <ul>
                     <li><a href="#">Dashborad</a></li>
                     <li><a href="#">项目管理</a></li>
@@ -29,24 +33,18 @@
                     <li><a href="#">素材管理</a></li>
                 </ul>
             </div>
-            <div class="nav-avatar-box">
-                <span>lufugang@domob.cn</span>
-                <i class="fa fa-angle-down"></i>
-                <div class="exit-box">退出</div>
-            </div>
+            
         </div>
     </nav>
     <div class="content">
         <div class="container">
             <div class="row select-project">
                 <div class="col-xs-1">选择项目</div>
-                
-                        <select class="selectpicker col-xs-11" data-style="btn-rain-layer" data-live-search="true">
-                            <option>奥迪五月投放</option>
-                            <option>奥迪五月投放</option>
-                            <option>奥迪五月投放</option>
-                        </select>
-                
+                    <select class="selectpicker col-xs-11" data-style="btn-rain-layer" data-live-search="true">
+                        <option>奥迪五月投放</option>
+                        <option>奥迪五月投放</option>
+                        <option>奥迪五月投放</option>
+                    </select>
             </div>
             <div class="tab-box">
                 <!-- Nav tabs -->
@@ -58,12 +56,11 @@
 			    	<div role="tabpanel" class="tab-pane active" id="data-watch">
 			    		<div class="filter-box row">
 			    			<div class="col-xs-3 text-left">
-			    				<label class="select">
-									<select class="blue">
-										<option>展现量</option>
-									</select>
-									<i></i>
-								</label>
+								<select class="selectpicker col-xs-7" data-style="btn-select-blue">
+									<option>展现量</option>
+									<option>展现量</option>
+									<option>展现量</option>
+								</select>
 			    			</div>
 							<div class="col-xs-6 text-center">
 								<span class="active">今天</span>
@@ -73,12 +70,9 @@
 								<span>自定义</span>
 							</div>
 							<div class="col-xs-3 text-right">
-								<label class="select">
-									<select class="yellow">
-										<option>CTR</option>
-									</select>
-									<i></i>
-								</label>
+								<select class="selectpicker col-xs-7" data-style="btn-select-yellow">
+									<option>CTR</option>
+								</select>
 							</div>
 						</div>
 						<div class="chart-box"></div>
@@ -140,7 +134,7 @@
 									</div>
 								</div>	
 							</div>	
-							<button class="btn-download"><i class="fa fa-download fa-2x"></i><p>下载报表</p></button>
+							<button class="btn-download"><p>下载报表</p></button>
 						</div>
 						<table>
 							<thead align="center">
@@ -185,16 +179,13 @@
 								<span>自定义</span>
 							</div>
 							<div class="col-xs-6 text-right">
-								<label class="select">
-									<select>
-										<option>展现量</option>
-									</select>
-									<i></i>
-								</label>
+								<select class="selectpicker col-xs-4" data-style="btn-select-gray">
+									<option>展现量</option>
+								</select>
 							</div>
 						</div>
 						<div class="chart-box">
-							<button class="btn-download"><i class="fa fa-download fa-2x"></i><p>下载报表</p></button>
+							<button class="btn-download"><p>下载报表</p></button>
 						</div>
 						<table>
 							<thead align="center">

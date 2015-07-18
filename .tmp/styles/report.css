@@ -1,6 +1,6 @@
 .select-project .col-xs-1,
 .select-project .col-xs-2 {
-  line-height: 50px;
+  line-height: 35px;
   font-size: 16px;
   color: #95a1b2;
 }
@@ -14,6 +14,9 @@
 .tab-box .nav-tabs {
   border-bottom: 1px solid #ddd;
 }
+.tab-box .nav-tabs .col-xs-6 {
+  padding: 0;
+}
 .tab-box .nav-tabs li a {
   font-size: 24px;
   font-weight: bolder;
@@ -22,10 +25,14 @@
   border-top: 0;
   border-bottom: 4px solid transparent;
   color: #aaa;
+  line-height: 67px;
+}
+.tab-box .nav-tabs li a:hover {
+  background-color: transparent;
 }
 .tab-box .nav-tabs li.active a {
   color: #333;
-  border-bottom: 4px solid #1b2f56;
+  border-bottom: 4px solid #25579c;
   border-left: 0;
   border-right: 0;
   border-top: 0;
@@ -46,33 +53,6 @@
 }
 .tab-box .filter-box span.active {
   border-bottom: 2px solid #1b2f56;
-}
-.tab-box .filter-box .select {
-  width: 125px;
-  margin-top: 45px;
-}
-.tab-box .filter-box .select select {
-  width: 125px;
-  height: 30px;
-  font-size: 14px;
-  border-radius: 15px;
-  border: 2px solid #ddd;
-  text-align: center;
-  padding: 0 15px;
-  box-shadow: none;
-}
-.tab-box .filter-box .select .blue {
-  border-color: #38c6e6;
-}
-.tab-box .filter-box .select .yellow {
-  border-color: #eddf46;
-}
-.tab-box .filter-box .select i {
-  box-shadow: none;
-  top: 16px;
-}
-.tab-box .filter-box .select i:after {
-  bottom: 0;
 }
 .tab-box .tab-pane {
   padding: 0 50px 50px;
@@ -190,4 +170,7 @@ table .process-bar:after {
 }
 .data-area .age {
   border-top: 1px solid #fff;
+}
+.btn-new-adviser {
+  margin-top: 20px;
 }

@@ -1,5 +1,5 @@
 .content .container {
-  width: 1160px;
+  width: 1200px;
 }
 .project-list-box {
   background-color: #fff;
@@ -10,6 +10,10 @@
 }
 .project-list-box header button {
   margin: 20px 0 10px 0;
+  padding: 0 30px;
+}
+.project-list-box table {
+  font-size: 12px;
 }
 .project-list-box table thead tr th {
   padding: 20px 10px;
@@ -46,6 +50,9 @@
 }
 .project-list-box table tbody tr:nth-child(odd) {
   background-color: #fafafa;
+}
+.modal-dialog {
+  margin-top: 275px;
 }
 .modal-dialog .modal-content {
   border-radius: 0;

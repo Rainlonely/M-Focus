@@ -1,5 +1,5 @@
 body {
-  font-family: 'Helvetica Neue', 'Hiragino Sans GB', 'WenQuanYi Micro Hei', 'Microsoft YaHei', '微软雅黑', SimSun, sans-serif;
+  font-family: 'Microsoft YaHei', '微软雅黑', 'Hiragino Sans GB';
 }
 ul {
   padding: 0;
@@ -12,21 +12,25 @@ ul {
 }
 nav {
   background-color: #1b2f56;
-  padding: 10px 0;
   font-size: 14px;
   color: #fff;
   line-height: 40px;
   margin-bottom: 55px;
 }
+nav .container {
+  padding: 0;
+}
 nav .nav-logo {
   float: left;
+  padding: 10px 0;
 }
 nav .nav-menu-box {
   float: left;
+  margin-right: 40px;
 }
 nav .nav-menu-box ul li {
   float: left;
-  padding: 0 20px;
+  padding: 10px 20px;
 }
 nav .nav-menu-box ul li a {
   color: #fff;
@@ -40,6 +44,7 @@ nav .nav-menu-box ul li:hover {
 nav .nav-avatar-box {
   float: left;
   position: relative;
+  padding: 10px 0;
 }
 nav .nav-avatar-box .exit-box {
   position: absolute;
@@ -96,7 +101,7 @@ footer {
   background-color: #4682f2;
 }
 .container {
-  width: 1160px;
+  width: 1200px;
 }
 .clear {
   clear: both;

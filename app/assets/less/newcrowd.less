@@ -1,4 +1,5 @@
 @import "variables.less";
+nav{margin-bottom: 10px;}
 .status-bar {
     margin-top: 58px;
     margin-bottom: 58px;
@@ -104,12 +105,6 @@
 }
 
 section {
-    // .radio {
-        
-    // }
-    // .radio:nth-last-child(3) {
-    //     margin-left: 0;
-    // }
     .age {
         .checkbox {
             margin-top: 0;
@@ -154,12 +149,17 @@ section {
     color: inherit;
     background-color: transparent;
     border: 0;
-    // input[type="radio"] {
-    //     width: 14px;
-    //     height: 14px;
-    //     border-radius: 7px;
-    //     background-color: #25579c;
-    // }
+}
+
+label[for="male"]{
+    background-image: url(../images/icon_gender_male.png);
+    background-repeat: no-repeat;
+    padding-left: 25px;
+}
+label[for="female"]{
+    background-image: url(../images/icon_gender_female.png);
+    background-repeat: no-repeat;
+    padding-left: 25px;
 }
 
 #car-box {
@@ -202,7 +202,7 @@ section {
     width: 382px;
     height: 562px;
     background-image: url('../images/head.png');
-    padding: 100px 30px 0 30px;
+    padding: 150px 40px 70px 40px;
     span {
         font-size: 44px;
         color: #25579c;
