@@ -418,3 +418,8 @@ a.btn-cancel {
   clear: both;
   padding-left: 15px;
 }
+.btn-404 {
+  background-image: url(../images/icon_404.png);
+  width: 217px;
+  height: 234px;
+}

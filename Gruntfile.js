@@ -62,7 +62,8 @@ module.exports = function (grunt) {
                     ".tmp/styles/projectlist.css": "<%= web.app %>/assets/less/projectlist.less",
                     ".tmp/styles/newcrowd.css": "<%= web.app %>/assets/less/newcrowd.less",
                     ".tmp/styles/report.css": "<%= web.app %>/assets/less/report.less",
-                    ".tmp/styles/adviser_edit.css": "<%= web.app %>/assets/less/adviser_edit.less"
+                    ".tmp/styles/adviser_edit.css": "<%= web.app %>/assets/less/adviser_edit.less",
+                    ".tmp/styles/404.css": "<%= web.app %>/assets/less/404.less"
                 }
             }
         },
