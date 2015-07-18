@@ -60,6 +60,9 @@ nav .nav-avatar-box .exit-box {
 nav .nav-avatar-box:hover .exit-box {
   display: block;
 }
+.breadcrumb .active a {
+  color: #95a1b2;
+}
 .white-content {
   background-color: #fff;
 }
