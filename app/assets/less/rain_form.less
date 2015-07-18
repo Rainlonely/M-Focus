@@ -122,9 +122,20 @@
 .checkbox-s{
 	background-color: transparent;
 	box-shadow: none;
-	input[type='checkbox']{top: 0}
+	input[type='checkbox']{
+		top: 0px;
+		left: 0;
+	}
 }
-
+.collapsing .checkbox-s,
+.collapse .checkbox-s{
+	width: 25%;
+	padding-left: 30px;
+	input[type='checkbox']{
+		top: 7px;
+		left: 0;
+	}
+}
 .radio{
 	padding-left: 35px!important;
 	position: relative;

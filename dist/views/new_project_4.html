@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../resources/css/rain_form.min.css">
     <link rel="stylesheet" href="../resources/css/newcrowd.min.css">
     <link rel="stylesheet" type="text/css" href="../resources/css/bootstrap-select.min.css">
+    <link rel="stylesheet" type="text/css" href="../resources/css/bootstrap-datetimepicker.min.css">
     <title>项目列表</title>
 </head>
 
@@ -53,12 +54,12 @@
                 <h2>投放活动设定</h2>
                 <div class="rain">
                     <span>投放时间</span>
-                    <label class="rain-layer" for="">
-                        <input type="date">
+                    <label class="rain-layer text" for="">
+                        <input type='text' id='datetimepicker1' data-container="body"/>
                     </label>
                     至
-                    <label class="rain-layer" for="">
-                        <input type="date">
+                    <label class="rain-layer text" for="">
+                        <input type='text' id='datetimepicker2' data-container="body"/>
                     </label>
                 </div>
                 <div class="rain">
@@ -86,6 +87,9 @@
                     <label class="rain-layer text col-xs-3">
                         <input type="text" value="">元
                     </label>
+                </div>
+                <div class="clear">
+                    
                 </div>
             </div>
             <div class="option-box">
@@ -406,6 +410,10 @@
                                 <label>安徽</label>
                                     <input type="checkbox" name="">
                                 </button>
+                                <button class="checkbox" >
+                                <label data-toggle="collapse" data-target="#anhui-box" aria-expanded="true" aria-controls="anhui-box">安徽</label>
+                                    <input type="checkbox" name="">
+                                </button>
                                 <div class="collapse" id="anhui-box">
                                   <div class=" checkbox ">
                                     <label>合肥</label>
@@ -471,9 +479,22 @@
     <!-- /.modal -->
     <script type="text/javascript" src="../resources/js/jquery.min.js"></script>
     <script type="text/javascript" src="../resources/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../resources/js/moment.min.js"></script>
     <script type="text/javascript" src="../resources/js/bootstrap-select.min.js"></script>
+    <script type="text/javascript" src="../resources/js/bootstrap-datetimepicker.min.js"></script>
     <script type="text/javascript">
-        $('.selectpicker').selectpicker();
+        
+        $(function () {
+                $('.selectpicker').selectpicker();
+                $('#datetimepicker1').datetimepicker();
+                $('#datetimepicker2').datetimepicker();
+                $("#datetimepicker1").on("dp.change", function (e) {
+                    $('#datetimepicker2').data("DateTimePicker").minDate(e.date);
+                });
+                $("#datetimepicker2").on("dp.change", function (e) {
+                    $('#datetimepicker1').data("DateTimePicker").maxDate(e.date);
+                });
+            });
     </script>
 </body>
 

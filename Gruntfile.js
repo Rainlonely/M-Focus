@@ -194,19 +194,19 @@ module.exports = function (grunt) {
                     },
                     {
                         expand: true,
-                        cwd: 'bower_components/jssor-slider/js',
-                        src: ['jssor.slider.mini.js'],
+                        cwd: 'bower_components/moment/min',
+                        src: ['moment.min.js'],
                         dest: '<%= web.dist %>/resources/js'
                     },
                     {
                         expand: true,
-                        cwd: 'bower_components/smalot-bootstrap-datetimepicker/js',
+                        cwd: 'bower_components/eonasdan-bootstrap-datetimepicker/build/js',
                         src: ['bootstrap-datetimepicker.min.js'],
                         dest: '<%= web.dist %>/resources/js'
                     },
                     {
                         expand: true,
-                        cwd: 'bower_components/bootstrap-datetimepicker/build/css',
+                        cwd: 'bower_components/eonasdan-bootstrap-datetimepicker/build/css',
                         src: ['bootstrap-datetimepicker.min.css'],
                         dest: '<%= web.dist %>/resources/css'
                     },
