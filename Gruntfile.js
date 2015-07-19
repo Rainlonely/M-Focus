@@ -182,7 +182,7 @@ module.exports = function (grunt) {
                     // 拷贝jquery js到build目录
                     {
                         expand: true,
-                        cwd: 'bower_components/jquery/dist',
+                        cwd: 'bower_components/jquery',
                         src: ['jquery.*'],
                         dest: '<%= web.dist %>/resources/js'
                     },

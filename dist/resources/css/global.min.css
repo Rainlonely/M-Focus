@@ -60,6 +60,29 @@ nav .nav-avatar-box .exit-box {
 nav .nav-avatar-box:hover .exit-box {
   display: block;
 }
+.nav {
+  background-color: transparent;
+}
+.nav .pagination > li:first-child > a,
+.nav .pagination > li:first-child > span {
+  border-radius: 0;
+}
+.nav .pagination > li:last-child > a,
+.nav .pagination > li:last-child > span {
+  border-radius: 0;
+}
+.nav .pagination > li > a,
+.nav .pagination > li > span {
+  padding: 9px 19px;
+  border: 0;
+}
+.nav .previous > a,
+.nav .next > a {
+  color: #333;
+}
+.nav .disable > a {
+  color: #999;
+}
 .breadcrumb .active a {
   color: #95a1b2;
 }

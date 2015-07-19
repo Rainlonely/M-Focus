@@ -62,6 +62,35 @@ nav {
         }
     }
 }
+.nav {
+    background-color: transparent;
+    .pagination > li:first-child > a, 
+    .pagination > li:first-child > span{
+        border-radius: 0;
+    }
+    .pagination > li:last-child > a, 
+    .pagination > li:last-child > span{
+        border-radius: 0;
+    }
+    .pagination > li > a, 
+    .pagination > li > span{
+        padding: 9px 19px;
+        border: 0;
+    }
+    .pagination > li > a:hover, 
+    .pagination > li > span:hover, 
+    .pagination > li > a:focus, 
+    .pagination > li > span:focus{
+
+        //background-color: inherit;
+    }
+    .previous >a ,.next > a{
+        color: #333;
+    }
+    .disable > a{
+        color: #999;
+    }
+}
 .breadcrumb .active a{
     color: #95a1b2;
 }

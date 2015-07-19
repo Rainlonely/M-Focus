@@ -175,3 +175,18 @@ table .process-bar:after {
 .btn-new-adviser {
   margin-top: 20px;
 }
+.carousel {
+  margin-top: 40px;
+}
+.carousel .carousel-inner {
+  width: 700px;
+  margin: 40px auto;
+}
+.carousel .carousel-inner .item .carousel-caption {
+  border-bottom: 1px solid #eee;
+  display: block;
+  position: initial;
+}
+.carousel .carousel-inner .item .carousel-caption span {
+  color: #95a1b2;
+}

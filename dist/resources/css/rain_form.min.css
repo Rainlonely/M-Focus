@@ -423,3 +423,6 @@ a.btn-cancel {
   width: 217px;
   height: 234px;
 }
+.bootstrap-datetimepicker-widget.dropdown-menu li:hover a {
+  background-color: #fff;
+}
