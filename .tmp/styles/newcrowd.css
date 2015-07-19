@@ -71,7 +71,6 @@ nav {
   border-width: 0 2px 2px 0;
   border-style: solid;
   border-color: #fff;
-  -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
   left: 24px;
   top: 0;
