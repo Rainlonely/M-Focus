@@ -92,10 +92,6 @@ nav .nav-avatar-box:hover .exit-box {
 .gray-box {
   background-color: #f5f5f5;
 }
-.process-bar {
-  position: relative;
-  padding-left: 55px!important;
-}
 .box-200 {
   width: 200px;
   height: 200px;
@@ -114,9 +110,11 @@ footer {
   padding: 45px 0;
   margin-top: 80px;
 }
-.process-bar:before,
-.process-bar:after {
-  content: "";
+.process-bar {
+  position: relative;
+  padding-left: 55px!important;
+}
+.process-bar .process-f {
   position: absolute;
   left: 0;
   top: 47%;
@@ -124,6 +122,14 @@ footer {
   height: 10px;
   border-radius: 5px;
   background-color: #d9e1e6;
+}
+.process-bar .process-f .process-c {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #4682f2;
 }
 .process-bar:after {
   width: 38px;

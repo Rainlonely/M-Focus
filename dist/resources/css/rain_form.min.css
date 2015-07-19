@@ -230,6 +230,7 @@ button.select {
 }
 .btn-select-yellow .filter-option {
   padding: 4px 0!important;
+  text-align: center!important;
 }
 .btn-select-yellow .caret {
   right: -10px !important;
@@ -246,6 +247,7 @@ button.select {
 }
 .btn-select-blue .filter-option {
   padding: 4px 0!important;
+  text-align: center!important;
 }
 .btn-select-blue .caret {
   right: -10px !important;
@@ -262,6 +264,7 @@ button.select {
 }
 .btn-select-gray .filter-option {
   padding: 4px 0!important;
+  text-align: center!important;
 }
 .btn-select-gray .caret {
   right: -10px !important;
@@ -297,6 +300,10 @@ button.select {
 }
 .dropdown-menu li.active a {
   background-color: #1b2f56;
+}
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+  outline: none;
 }
 .bootstrap-select.btn-group .dropdown-menu {
   min-width: 97%;
