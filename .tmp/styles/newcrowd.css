@@ -3,7 +3,7 @@ nav {
 }
 .status-bar {
   margin-top: 0px;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
 }
 .status-bar ul {
   overflow: hidden;
@@ -12,7 +12,7 @@ nav {
 .status-bar ul li {
   float: left;
   width: 56px;
-  height: 53px;
+  height: 54px;
   color: #aaa;
   margin: 0 35px;
   position: relative;
@@ -71,6 +71,7 @@ nav {
   border-width: 0 2px 2px 0;
   border-style: solid;
   border-color: #fff;
+  -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
   left: 24px;
   top: 0;
@@ -102,6 +103,9 @@ nav {
 .status-bar-edit ul li.active {
   background-color: #25579c;
   color: #fff;
+}
+section header {
+  padding-top: 4px;
 }
 section .age .checkbox {
   margin-top: 0;
@@ -217,7 +221,7 @@ label[for="female"] {
 }
 .media-managment-box li a,
 .media-box li a {
-  padding: 20px 10px 44px 10px;
+  padding: 20px 10px 45px 10px;
 }
 .media-managment-box li figure,
 .media-box li figure {
@@ -298,6 +302,9 @@ label[for="female"] {
 .tab-pane h2 .rain {
   display: inline-block;
 }
+.tab-pane p span {
+  margin-right: 20px;
+}
 .tab-pane span {
   color: #aaa;
 }
@@ -309,6 +316,7 @@ label[for="female"] {
 }
 .tab-pane table thead tr th {
   font-weight: bold;
+  padding-bottom: 16px;
 }
 .tab-pane table thead tr th:nth-child(1) {
   width: 64px;
@@ -328,7 +336,7 @@ label[for="female"] {
 .tab-pane table tbody tr td .checkbox-s {
   width: 16px;
   height: 16px;
-  margin: 0 auto;
+  margin: -8px auto 0 auto;
 }
 .tab-pane table tbody tr:nth-child(odd) {
   background-color: #eeeeee;
@@ -349,7 +357,7 @@ label[for="female"] {
 }
 .creative-material {
   background-color: #fff;
-  padding: 20px 0;
+  padding: 10px 0;
 }
 .creative-material h2 {
   background-color: #f5f5f5;
@@ -383,6 +391,7 @@ label[for="female"] {
   background-color: #f5f5f5;
   height: 350px;
   overflow-y: scroll;
+  padding: 3px 15px;
 }
 .modal .modal-body .icon-box {
   width: 200px;
@@ -410,11 +419,18 @@ label[for="female"] {
 }
 .option-box i + b {
   margin-left: 10px;
+  font-weight: normal;
 }
 .option-box .inline-checkbox .checkbox {
   width: 17%;
   margin-right: 10px;
   margin-top: 0;
+}
+#citySetting .modal-body {
+  padding: 3px;
+}
+#citySetting .modal-body .container-fluid {
+  padding-right: 0;
 }
 #citySetting .col-xs-8 {
   border-right: 1px solid #dadada;
@@ -429,6 +445,10 @@ label[for="female"] {
 }
 #citySetting .provice-box .checkbox label {
   text-align: left;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 85%;
+  white-space: pre;
 }
 #citySetting .provice-box .checkbox:first-child {
   border-top: 1px solid #dadada;
@@ -455,6 +475,7 @@ label[for="female"] {
   top: 24px;
   right: 60px;
   width: 92px;
+  cursor: pointer;
 }
 #citySetting #express-box span {
   font-size: 12px;
@@ -515,4 +536,19 @@ label[for="female"] {
   font-size: 14px;
   color: #db290a;
   text-align: left;
+}
+.rain > span.clear {
+  padding: 7px 0;
+}
+.summary-box header {
+  margin-bottom: 10px;
+}
+.summary-box .rain span {
+  padding: 10px 0;
+}
+.summary-box + .col-xs-4 .face-area {
+  margin-top: 0;
+}
+footer.gray-box {
+  margin-top: 0;
 }

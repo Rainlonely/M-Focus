@@ -3,6 +3,11 @@
     line-height: 36px;
     font-size: 16px;
     color: #95a1b2;
+
+    .bootstrap-select.btn-group .dropdown-menu{
+        min-width: 96%;
+        left: 14px;
+    }
 }
 
 .tab-content {
@@ -77,15 +82,21 @@
         overflow: hidden;
         .option-box {
             float: left;
-            width: 910px;
+            width: 945px;
             background-color: #f5f5f5;
             overflow: hidden;
+            padding-top: 5px;
             .col {
-                height: 105px;
+                height: 100px;
                 width: 105px;
                 text-align: center;
                 line-height: 105px;
                 float: left;
+            }
+            .col-xs-2{
+                width: 150px;
+                padding: 0;
+                margin: 0 5px;
             }
         }
     }
@@ -124,11 +135,15 @@
             span {
                 color: @brand-primary;
                 font-size: 24px;
+                font-weight: bolder;
             }
         }
     }
     .col-xs-6:nth-child(1) {
         border-right: 1px solid #ddd;
+    }
+    .col-xs-6:nth-child(2) {
+        padding-left: 70px;
     }
 }
 
@@ -136,10 +151,12 @@ table {
     //margin: 0 50px;
     width: 1040px;
     th {
-        text-align: center;
+        text-align: left;
+        padding-left: 20px;
     }
     tr {
         height: 75px;
+        td{padding-left: 20px;}
     }
     tbody tr:nth-child(odd) {
         background-color: #fafafa;
@@ -151,6 +168,10 @@ table {
 }
 
 #crowd-management {
+    th {
+        text-align: left;
+        padding-left: 20px;
+    }
     tbody {
         tr {
             height: 50px;
@@ -163,6 +184,13 @@ table {
             }
         }
     }
+}
+#mediaReport{
+    th{
+        padding-left: 20px;
+        text-align: right;
+    }
+    th:nth-last-child(1){text-align: left;}
 }
 
 .data-area {
@@ -178,6 +206,7 @@ table {
     .chart {
         background-color: #f5f5f5;
     }
+    .chart-box{margin-bottom: 60px;}
     .interest {
         height: 600px;
         border-right: 1px solid #fff;
@@ -215,4 +244,8 @@ table {
         }
         
     }
+}
+footer{
+    width: 100%;
+    background-color: #f5f5f5;
 }

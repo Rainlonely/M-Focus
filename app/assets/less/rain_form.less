@@ -3,7 +3,7 @@
 	clear: both;
 	//padding: 5px 0;
 	.rain-layer{
-		box-shadow: 2px 2px 3px #d6d6d6;
+		box-shadow: 2px 2px 1px #e9e9e9;
 		background-color: #fff;
 		font-size: 12px;
 		position: relative;
@@ -21,7 +21,7 @@
 .rain > span{
 	font-size: 12px;
 	color: #95a1b2;
-	padding: 20px 0 5px;
+	padding: 20px 0 8px;
 	display: block;
 	b{color: #333;}
 	}
@@ -71,7 +71,7 @@
 	width: 100%;
 	color: #25579c;
 	background-color: #fff;
-	box-shadow: 2px 2px 3px #d6d6d6;
+	box-shadow: 2px 2px 1px #e9e9e9;
 	padding:8px 14px;
 	label{
 		display: inline-block;
@@ -136,6 +136,7 @@
 		left: 0;
 	}
 }
+.radio, .checkbox{margin: 5px 0;}
 .radio{
 	padding-left: 35px!important;
 	position: relative;
@@ -195,11 +196,12 @@ button.select{
 .btn-rain-layer{
     background-color: #fff;
     border-radius: 0;
-    border: 1px solid #f1f1f1;
-    box-shadow: 2px 2px 3px #d6d6d6;
+    border: 1px solid transparent;
+    box-shadow: 2px 2px 1px #e9e9e9;
     color: @brand-primary;
+    span{color: @brand-primary!important;}
 }
-.btn-rain-layer:active{box-shadow: 2px 2px 3px #d6d6d6;}
+.btn-rain-layer:active{box-shadow: 2px 2px 1px #e9e9e9;}
 .btn-rain-layer:focus{outline: 0;}
 
 .btn-select-yellow{
@@ -255,7 +257,7 @@ button.select{
 
 .dropdown-menu{
 	border-radius: 0;
-	left: 14px;
+	//left: 14px;
 	.bs-searchbox{
 		position: relative;
 		input[type='text']{
@@ -274,7 +276,14 @@ button.select{
 
 	}
 	li{
-		a{span.text{color: #999;}}
+		a{
+			span.text{
+				color: #999;
+				margin-top: 0;
+				line-height: 0;
+				padding: 5px 0;
+			}
+		}
 	}
 	li:hover{
 		a{background-color: @brand-primary; }
@@ -283,7 +292,8 @@ button.select{
 	}
 	li.active{
 		a{
-			background-color: #1b2f56
+			background-color: #25579c;
+			span.text{color: #fff;}
 		}
 	}
 }

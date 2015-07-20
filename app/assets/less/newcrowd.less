@@ -1,15 +1,18 @@
 @import "variables.less";
-nav{margin-bottom: 10px;}
+nav {
+    margin-bottom: 10px;
+}
+
 .status-bar {
     margin-top: 0px;
-    margin-bottom: 30px;
+    margin-bottom: 27px;
     ul {
         overflow: hidden;
         margin: 0 auto;
         li {
             float: left;
             width: 56px;
-            height: 53px;
+            height: 54px;
             color: #aaa;
             margin: 0 35px;
             position: relative;
@@ -43,8 +46,10 @@ nav{margin-bottom: 10px;}
         }
         li.active {
             color: #25579c;
-            span:before{ border: 1px solid #25579c;}
-            span:after{
+            span:before {
+                border: 1px solid #25579c;
+            }
+            span:after {
                 content: "";
                 position: absolute;
                 width: 20px;
@@ -55,11 +60,11 @@ nav{margin-bottom: 10px;}
                 left: 18px;
             }
         }
-        li.done{
-            span:before{
+        li.done {
+            span:before {
                 background-color: #1ca933;
             }
-            span:after{
+            span:after {
                 content: "";
                 position: absolute;
                 width: 10px;
@@ -72,10 +77,10 @@ nav{margin-bottom: 10px;}
                 top: 0;
             }
         }
-
     }
 }
-.status-bar-edit{
+
+.status-bar-edit {
     width: 800px;
     margin: 58px auto;
     ul {
@@ -97,14 +102,17 @@ nav{margin-bottom: 10px;}
                 line-height: 53px;
             }
         }
-        li.active{
-        	background-color: #25579c;
-        	color: #fff;
+        li.active {
+            background-color: #25579c;
+            color: #fff;
         }
     }
 }
 
 section {
+    header {
+        padding-top: 4px;
+    }
     .age {
         .checkbox {
             margin-top: 0;
@@ -128,12 +136,12 @@ section {
 
 .nav-tabs {
     border: 0;
-    .rain-layer{
+    .rain-layer {
         width: 150px;
         float: left;
         margin: 0 10px;
     }
-    .rain-layer:first-child{
+    .rain-layer:first-child {
         margin-left: 0;
     }
 }
@@ -151,12 +159,13 @@ section {
     border: 0;
 }
 
-label[for="male"]{
+label[for="male"] {
     background-image: url(../images/icon_gender_male.png);
     background-repeat: no-repeat;
     padding-left: 25px;
 }
-label[for="female"]{
+
+label[for="female"] {
     background-image: url(../images/icon_gender_female.png);
     background-repeat: no-repeat;
     padding-left: 25px;
@@ -212,10 +221,9 @@ label[for="female"]{
     }
 }
 
-
 .media-managment-box,
-.media-box{
-    .container{
+.media-box {
+    .container {
         width: 900px;
         padding: 0;
         overflow-y: hidden;
@@ -224,25 +232,29 @@ label[for="female"]{
 }
 
 .media-managment-box,
-.media-box{
+.media-box {
     background-color: #fff;
     height: 300px;
     padding-top: 50px;
-    position: relative;    
-    li{
+    position: relative;
+    li {
         width: 150px;
-        a{ padding:20px 10px 44px 10px;}
-        figure{
+        a {
+            padding: 20px 10px 45px 10px;
+        }
+        figure {
             width: 102px;
-            margin:0 auto 20px auto;
-            img{width: 100%;}
-            figcaption{
+            margin: 0 auto 20px auto;
+            img {
+                width: 100%;
+            }
+            figcaption {
                 margin-top: 20px;
                 color: #999;
                 text-align: center;
             }
         }
-        span{
+        span {
             height: 24px;
             line-height: 24px;
             border-radius: 12px;
@@ -253,14 +265,16 @@ label[for="female"]{
             display: block;
             font-size: 12px;
         }
-        span.select{
+        span.select {
             background-color: #25579c;
         }
     }
-    li.active{
-        a{ background-color: #f5f5f5!important;}
+    li.active {
+        a {
+            background-color: #f5f5f5!important;
+        }
     }
-    .arrow{
+    .arrow {
         width: 100px;
         height: 100px;
         background-color: #ccc;
@@ -268,226 +282,331 @@ label[for="female"]{
         top: 100px;
         text-align: center;
         line-height: 116px;
-        i{color: #fff;}
+        i {
+            color: #fff;
+        }
     }
-    .arrow:hover{ background-color: #25579c;}
-    .arrow.available{background-color: #25579c;}
-    .pull-left{left: 0;}
-    .pull-right{right: 0;}
+    .arrow:hover {
+        background-color: #25579c;
+    }
+    .arrow.available {
+        background-color: #25579c;
+    }
+    .pull-left {
+        left: 0;
+    }
+    .pull-right {
+        right: 0;
+    }
 }
-.media-managment-box{
+
+.media-managment-box {
     padding-top: 20px;
-    li a{
+    li a {
         padding: 20px 10px 20px 10px;
     }
 }
-.tab-pane{
+
+.tab-pane {
     overflow: hidden;
     width: 100%;
     margin-top: 60px;
-    h2 .rain{display: inline-block;}
-    span{
-        color: #aaa;
-        b{ color: #333;}
+    h2 .rain {
+        display: inline-block;
     }
-    table{
+    p span {
+        margin-right: 20px;
+    }
+    span {
+        color: #aaa;
+        b {
+            color: #333;
+        }
+    }
+    table {
         margin-top: 40px;
-        thead{
-            tr{
-                th{font-weight: bold;}
-                th:nth-child(1){width: 64px;}
+        thead {
+            tr {
+                th {
+                    font-weight: bold;
+                    padding-bottom: 16px;
+                }
+                th:nth-child(1) {
+                    width: 64px;
+                }
                 th:nth-child(2),
                 th:nth-child(3),
                 th:nth-child(4),
-                th:nth-child(6){width: 110px;}
-                th:nth-child(5){width: 210px;}
+                th:nth-child(6) {
+                    width: 110px;
+                }
+                th:nth-child(5) {
+                    width: 210px;
+                }
             }
         }
-        tbody{
+        tbody {
             font-size: 12px;
-            tr{
-                td{
-                    .checkbox-s{
+            tr {
+                td {
+                    .checkbox-s {
                         width: 16px;
                         height: 16px;
-                        margin: 0 auto;
+                        margin: -8px auto 0 auto;
                     }
                 }
             }
-            tr:nth-child(odd){background-color: #eeeeee;}
-            tr:hover{background-color: #536175; color: #fff;}
+            tr:nth-child(odd) {
+                background-color: #eeeeee;
+            }
+            tr:hover {
+                background-color: #536175;
+                color: #fff;
+            }
         }
         //td:nth-child(5){width: 210px;}
     }
 }
-.basic-info{
-    .rain{
-        .rain-layer{margin-right: 10px;}
-        .radio{
+
+.basic-info {
+    .rain {
+        .rain-layer {
+            margin-right: 10px;
+        }
+        .radio {
             margin: 0 10px;
             color: #25579c;
         }
-        label{color: #333;}
+        label {
+            color: #333;
+        }
     }
-
 }
-.creative-material{
+
+.creative-material {
     background-color: #fff;
-    padding: 20px 0;
-    h2{
+    padding: 10px 0;
+    h2 {
         background-color: #f5f5f5;
         padding: 10px;
         line-height: 47px;
         //height: 63px
-        figure{
+        figure {
             width: 44px;
             float: left;
             margin-right: 15px;
-            img{width: 100%;}
+            img {
+                width: 100%;
+            }
         }
     }
-    h4{
+    h4 {
         padding: 10px 0;
         border-bottom: 1px solid #f5f5f5;
     }
-    figure{
+    figure {
         float: left;
         margin-right: 10px;
     }
 }
 
-.modal{
-    .modal-header{
-        h4 span{
+.modal {
+    .modal-header {
+        h4 span {
             font-size: 14px;
             color: #95a1b2;
         }
-        .close{color: #25579c;}
+        .close {
+            color: #25579c;
+        }
     }
-    .modal-body{
+    .modal-body {
         background-color: #f5f5f5;
         height: 350px;
         overflow-y: scroll;
-        .icon-box{
+        padding: 3px 15px;
+        .icon-box {
             width: 200px;
             height: 200px;
         }
-        .img-box{
+        .img-box {
             width: 360px;
             height: 360px;
         }
     }
-    .modal-footer{
+    .modal-footer {
         text-align: center;
     }
 }
-.option-box{
+
+.option-box {
     overflow: hidden;
-    
-    table{
-        .checkbox{
+    table {
+        .checkbox {
             box-shadow: none;
         }
-        th,td{border: 1px solid #f5f5f5;}
+        th,
+        td {
+            border: 1px solid #f5f5f5;
+        }
     }
-    .fa-mobile{ font-size: 18px;}
-    i + b{margin-left: 10px;}
+    .fa-mobile {
+        font-size: 18px;
+    }
+    i + b {
+        margin-left: 10px;
+        font-weight: normal;
+    }
     //.fa-mobile + b{ font-size: 12px;}
-    .inline-checkbox{
-        .checkbox{
+    .inline-checkbox {
+        .checkbox {
             width: 17%;
             margin-right: 10px;
             margin-top: 0;
         }
     }
 }
-#citySetting{
-    .col-xs-8{border-right: 1px solid #dadada;}
-    .provice-box{
-        .checkbox{
-        box-shadow: none;
-        margin:0;
-        border: 1px solid #dadada;
-        width: 50%;
-        clear: both;
-        border-top: 1px solid transparent;
-        label{text-align: left;}
+
+#citySetting {
+    .modal-body{
+        padding: 3px;
+        .container-fluid{padding-right: 0;}
+    }
+    .col-xs-8 {
+        border-right: 1px solid #dadada;
+    }
+    .provice-box {
+        .checkbox {
+            box-shadow: none;
+            margin: 0;
+            border: 1px solid #dadada;
+            width: 50%;
+            clear: both;
+            border-top: 1px solid transparent;
+            label {
+                text-align: left;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                width: 85%;
+                white-space: pre;
+            }
         }
-        .checkbox:first-child{border-top: 1px solid #dadada;}
-        .collapse{
+        .checkbox:first-child {
+            border-top: 1px solid #dadada;
+        }
+        .collapse {
             padding-left: 20px;
-            .checkbox{
+            .checkbox {
                 width: 30%;
                 clear: none;
                 float: left;
             }
-            .checkbox:first-child{border-top: 1px solid transparent;}
-        }    
+            .checkbox:first-child {
+                border-top: 1px solid transparent;
+            }
+        }
     }
-    .collapsing{display: none;}
-    .container-fluid{position: relative;}
-    #express-box{
+    .collapsing {
+        display: none;
+    }
+    .container-fluid {
+        position: relative;
+    }
+    #express-box {
         position: absolute;
         top: 24px;
         right: 60px;
         width: 92px;
-        span{
+        cursor: pointer;
+        span {
             font-size: 12px;
             color: #25579c;
         }
-        .collapse{
+        .collapse {
             margin-top: 9px;
             background-color: #fff;
             padding: 10px 0;
-            border:1px solid #dadada;
-            li{
+            border: 1px solid #dadada;
+            li {
                 color: #25579c;
                 line-height: 32px;
                 padding: 0 10px;
             }
-            li:hover{
+            li:hover {
                 background-color: #25579c;
                 color: #fff;
             }
         }
     }
-    span{
-        span.pull-right{color: @brand-primary;}
+    span {
+        span.pull-right {
+            color: @brand-primary;
+        }
     }
-    .selected-city-list{
-        .checkbox{
+    .selected-city-list {
+        .checkbox {
             width: 100%;
-            i{cursor: pointer;}
+            i {
+                cursor: pointer;
+            }
         }
     }
 }
 
 .swipe {
-  overflow: hidden;
-  visibility: hidden;
-  position: relative;
+    overflow: hidden;
+    visibility: hidden;
+    position: relative;
 }
+
 .swipe-wrap {
-  overflow: hidden;
-  position: relative;
+    overflow: hidden;
+    position: relative;
 }
+
 .swipe-wrap > li {
-  float:left;
-  width:100%;
-  position: relative;
+    float: left;
+    width: 100%;
+    position: relative;
 }
-.message{
+
+.message {
     width: 270px;
     font-size: 24px;
     margin: 130px auto;
-    div{
+    div {
         padding-top: 20px;
         margin-left: 102px;
     }
-    img{float: left; margin-right: 30px;}
-    span{
+    img {
+        float: left;
+        margin-right: 30px;
+    }
+    span {
         font-size: 14px;
         color: #db290a;
         text-align: left;
     }
+}
+
+.rain>span.clear {
+    padding: 7px 0;
+}
+.summary-box{
+    header{
+        margin-bottom: 10px;
+    }
+    .rain{
+        span{
+            padding: 10px 0;
+        }    
+    }
+}
+.summary-box + .col-xs-4{
+    .face-area{
+        margin-top: 0;
+    }
+}
+footer.gray-box {
+    margin-top: 0;
 }

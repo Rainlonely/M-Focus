@@ -136,23 +136,23 @@
 							</div>	
 							<button class="btn-download"><p>下载报表</p></button>
 						</div>
-						<table>
-							<thead align="center">
+						<table id="mediaReport">
+							<thead >
 								<tr>
-									<th>日期</th>	
-									<th>展现量</th>	
-									<th>点击量</th>	
-									<th>点击率</th>	
-									<th>消费</th>
-									<th>日预算</th>	
-									<th>日预算进度</th>
-									<th>点击单价</th>
-									<th>千次点击单价</th>
-									<th>上下线时间</th>	
+									<th align="right">日期</th>	
+									<th align="right">展现量</th>	
+									<th align="right">点击量</th>	
+									<th align="right">点击率</th>	
+									<th align="right">消费</th>
+									<th align="right">日预算</th>	
+									<th align="right">日预算进度</th>
+									<th align="right">点击单价</th>
+									<th align="right">千次点击单价</th>
+									<th align="left">上下线时间</th>	
 								</tr>
 							</thead>
 							<tbody>
-								<tr align="center">
+								<tr align="right">
 									<td>2015-01-14</td>
 									<td>2,822,120</td>
 									<td>622,120</td>
@@ -162,9 +162,7 @@
 									<td class="process-bar"></td>
 									<td>￥0.69</td>
 									<td>￥690.00</td>
-									<td>
-										始 2015-05-01 00:00:00 <br>至 2015-06-01 00:00:00
-									</td>
+									<td align="left">始 2015-05-01 00:00:00 <br>至 2015-06-01 00:00:00</td>
 								</tr>
 							</tbody>
 						</table>
@@ -262,6 +260,7 @@
         </div>
     </div>
     <footer>
+    	
     </footer>
     <!-- Modal -->
     <div class="modal fade" id="new-project-box" tabindex="-1" role="dialog" aria-labelledby="newProject" aria-hidden="true">
