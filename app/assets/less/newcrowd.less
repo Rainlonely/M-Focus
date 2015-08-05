@@ -100,6 +100,7 @@ nav {
                 position: relative;
                 display: block;
                 line-height: 53px;
+                color: #25579c;
             }
         }
         li.active {
@@ -408,6 +409,7 @@ label[for="female"] {
         float: left;
         margin-right: 10px;
     }
+    .rain{position: relative;}
 }
 
 .modal {
@@ -467,7 +469,7 @@ label[for="female"] {
     }
 }
 
-#citySetting {
+#interestSetting ,#citySetting {
     .modal-body{
         padding: 3px;
         .container-fluid{padding-right: 0;}
@@ -609,4 +611,20 @@ label[for="female"] {
 }
 footer.gray-box {
     margin-top: 0;
+}
+
+
+.demo-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: absolute!important;
+    right: 0;
+    span{margin: auto  auto auto 0px;}
+    
+    figure{
+        width: 310px;
+        img{width: 100%;}
+    }
 }

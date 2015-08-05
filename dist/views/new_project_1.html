@@ -159,10 +159,12 @@
                             </div>
                             <div class="rain col-xs-8">
                                 <span>日常兴趣</span>
-                                <button class="rain-layer select" data-toggle="collapse" data-target="#car-box" aria-expanded="true" aria-controls="car-box">汽车<i></i>
-                                </button>
+                                <button class="rain-layer col-xs-5" data-toggle="modal" data-target="#interestSetting">兴趣选择</button><span class="clear"></span>
+                                <i class="fa fa-heart"></i><b>  已选0个兴趣</b>
+                                <!-- <button class="rain-layer select" data-toggle="collapse" data-target="#car-box" aria-expanded="true" aria-controls="car-box">汽车<i></i>
+                                </button> -->
                             </div>
-                            <div id="car-box" class="collapse rain col-xs-12">
+                            <!-- <div id="car-box" class="collapse rain col-xs-12">
                                 <div class="checkbox-s col-xs-3">
                                     <input type="checkbox" name="fifty">
                                     <label for="fifty">宝马</label>
@@ -259,7 +261,7 @@
                                         <li>女性</li>
                                     </ul>
                                 </div>
-                            </div>
+                            </div> -->
                             <div class="rain col-xs-8">
                                 <span>日覆盖受众规模</span>
                                 <button class="btn-action">
@@ -312,6 +314,108 @@
             </div>
         </div>
     </footer>
+    <div class="modal fade"  id="interestSetting" tabindex="-1" role="dialog" aria-labelledby="interestSettingLabel">
+        <div class="modal-dialog moadl-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">兴趣选择</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="col-xs-8">
+                            <div class="rain provice-box">
+                                <span>请选择兴趣</span>
+                                <div class=" checkbox ">
+                                    <label>动漫</label>
+                                    <input type="checkbox" name="">
+                                </div>
+                                <div class=" checkbox ">
+                                    <label>工具</label>
+                                    <input type="checkbox" name="">
+                                </div>
+                                <div class=" checkbox ">
+                                    <label>记录片</label>
+                                    <input type="checkbox" name="">
+                                </div>
+                                <div class=" checkbox ">
+                                    <label>教育</label>
+                                    <input type="checkbox" name="">
+                                </div>
+                                <button class="checkbox" data-toggle="collapse" data-target="#anhui-box" aria-expanded="true" aria-controls="anhui-box">
+                                <label>安徽</label>
+                                    <input type="checkbox" name="">
+                                </button>
+                                <button class="checkbox" >
+                                <label data-toggle="collapse" data-target="#anhui-box" aria-expanded="true" aria-controls="anhui-box">安徽</label>
+                                    <input type="checkbox" name="">
+                                </button>
+                                <div class="collapse" id="anhui-box">
+                                  <div class=" checkbox ">
+                                    <label>合肥</label>
+                                    <input type="checkbox" name="">
+                                  </div>
+                                  <div class=" checkbox ">
+                                    <label>黄山</label>
+                                    <input type="checkbox" name="">
+                                  </div>
+                                  <div class=" checkbox ">
+                                    <label>马鞍山</label>
+                                    <input type="checkbox" name="">
+                                  </div>
+                                  <div class=" checkbox ">
+                                    <label>合肥</label>
+                                    <input type="checkbox" name="">
+                                  </div>
+                                  <div class=" checkbox ">
+                                    <label>黄山</label>
+                                    <input type="checkbox" name="">
+                                  </div>
+                                  <div class=" checkbox ">
+                                    <label>马鞍山</label>
+                                    <input type="checkbox" name="">
+                                  </div>
+                                </div>
+                            </div>
+                            
+                            <div id="express-box" data-toggle="collapse" data-target="#express-select">
+                                <span>快速选择<i class="fa fa-caret-down"></i></span>
+                                <div class="collapse" id="express-select">
+                                <ul>
+                                    <li>全选</li>
+                                    <li>全不选</li>
+                                </ul>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="col-xs-4">
+                            <div class="rain">
+                                <span>已选择地区 <span class="pull-right">清空</span></span>
+                                <ul class="selected-city-list provice-box">
+                                    <li class="checkbox">动漫<i class="fa fa-close pull-right"></i></li>
+                                    <li class="checkbox">工具<i class="fa fa-close pull-right"></i></li>
+                                    <li class="checkbox">纪录片<i class="fa fa-close pull-right"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="col-xs-6 text-right">
+                        <button type="button" class="btn-cancel" data-dismiss="modal">取消</button>    
+                    </div>
+                    <div class="col-xs-6 text-left">
+                        <button type="button" class="btn-action">确认</button>    
+                    </div>
+                    
+                    
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
     <script type="text/javascript" src="../resources/js/jquery.min.js"></script>
     <script type="text/javascript" src="../resources/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../resources/js/bootstrap-select.min.js"></script>

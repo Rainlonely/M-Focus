@@ -99,6 +99,7 @@ nav {
   position: relative;
   display: block;
   line-height: 53px;
+  color: #25579c;
 }
 .status-bar-edit ul li.active {
   background-color: #25579c;
@@ -380,6 +381,9 @@ label[for="female"] {
   float: left;
   margin-right: 10px;
 }
+.creative-material .rain {
+  position: relative;
+}
 .modal .modal-header h4 span {
   font-size: 14px;
   color: #95a1b2;
@@ -426,15 +430,19 @@ label[for="female"] {
   margin-right: 10px;
   margin-top: 0;
 }
+#interestSetting .modal-body,
 #citySetting .modal-body {
   padding: 3px;
 }
+#interestSetting .modal-body .container-fluid,
 #citySetting .modal-body .container-fluid {
   padding-right: 0;
 }
+#interestSetting .col-xs-8,
 #citySetting .col-xs-8 {
   border-right: 1px solid #dadada;
 }
+#interestSetting .provice-box .checkbox,
 #citySetting .provice-box .checkbox {
   box-shadow: none;
   margin: 0;
@@ -443,6 +451,7 @@ label[for="female"] {
   clear: both;
   border-top: 1px solid transparent;
 }
+#interestSetting .provice-box .checkbox label,
 #citySetting .provice-box .checkbox label {
   text-align: left;
   text-overflow: ellipsis;
@@ -450,26 +459,33 @@ label[for="female"] {
   width: 85%;
   white-space: pre;
 }
+#interestSetting .provice-box .checkbox:first-child,
 #citySetting .provice-box .checkbox:first-child {
   border-top: 1px solid #dadada;
 }
+#interestSetting .provice-box .collapse,
 #citySetting .provice-box .collapse {
   padding-left: 20px;
 }
+#interestSetting .provice-box .collapse .checkbox,
 #citySetting .provice-box .collapse .checkbox {
   width: 30%;
   clear: none;
   float: left;
 }
+#interestSetting .provice-box .collapse .checkbox:first-child,
 #citySetting .provice-box .collapse .checkbox:first-child {
   border-top: 1px solid transparent;
 }
+#interestSetting .collapsing,
 #citySetting .collapsing {
   display: none;
 }
+#interestSetting .container-fluid,
 #citySetting .container-fluid {
   position: relative;
 }
+#interestSetting #express-box,
 #citySetting #express-box {
   position: absolute;
   top: 24px;
@@ -477,31 +493,38 @@ label[for="female"] {
   width: 92px;
   cursor: pointer;
 }
+#interestSetting #express-box span,
 #citySetting #express-box span {
   font-size: 12px;
   color: #25579c;
 }
+#interestSetting #express-box .collapse,
 #citySetting #express-box .collapse {
   margin-top: 9px;
   background-color: #fff;
   padding: 10px 0;
   border: 1px solid #dadada;
 }
+#interestSetting #express-box .collapse li,
 #citySetting #express-box .collapse li {
   color: #25579c;
   line-height: 32px;
   padding: 0 10px;
 }
+#interestSetting #express-box .collapse li:hover,
 #citySetting #express-box .collapse li:hover {
   background-color: #25579c;
   color: #fff;
 }
+#interestSetting span span.pull-right,
 #citySetting span span.pull-right {
   color: #25579c;
 }
+#interestSetting .selected-city-list .checkbox,
 #citySetting .selected-city-list .checkbox {
   width: 100%;
 }
+#interestSetting .selected-city-list .checkbox i,
 #citySetting .selected-city-list .checkbox i {
   cursor: pointer;
 }
@@ -551,4 +574,25 @@ label[for="female"] {
 }
 footer.gray-box {
   margin-top: 0;
+}
+.demo-box {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: flex-end;
+  align-items: flex-end;
+  position: absolute!important;
+  right: 0;
+}
+.demo-box span {
+  margin: auto  auto auto 0px;
+}
+.demo-box figure {
+  width: 310px;
+}
+.demo-box figure img {
+  width: 100%;
 }
