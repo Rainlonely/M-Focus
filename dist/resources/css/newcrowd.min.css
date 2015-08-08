@@ -374,8 +374,9 @@ label[for="female"] {
   width: 100%;
 }
 .creative-material h4 {
-  padding: 10px 0;
+  padding: 50px 0 10px 0;
   border-bottom: 1px solid #f5f5f5;
+  font-weight: bolder;
 }
 .creative-material figure {
   float: left;
@@ -383,6 +384,10 @@ label[for="female"] {
 }
 .creative-material .rain {
   position: relative;
+}
+.creative-material .rain a {
+  margin: 10px 50px auto 0;
+  display: inline-block;
 }
 .modal .modal-header h4 span {
   font-size: 14px;
@@ -404,6 +409,10 @@ label[for="female"] {
 .modal .modal-body .img-box {
   width: 360px;
   height: 360px;
+}
+.modal .modal-body .banner-box {
+  width: 800px;
+  height: 125px;
 }
 .modal .modal-footer {
   text-align: center;
@@ -586,6 +595,7 @@ footer.gray-box {
   align-items: flex-end;
   position: absolute!important;
   right: 0;
+  top: 80px;
 }
 .demo-box span {
   margin: auto  auto auto 0px;
