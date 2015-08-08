@@ -103,6 +103,8 @@ nav {
 }
 .status-bar-edit ul li.active {
   background-color: #25579c;
+}
+.status-bar-edit ul li.active span {
   color: #fff;
 }
 section header {
