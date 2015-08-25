@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../resources/css/bootstrap.min.css">
     <link rel="stylesheet" href="../resources/css/fontawesome.min.css">
     <link rel="stylesheet" href="../resources/css/global.min.css">
-    <link rel="stylesheet" type="text/css" href="../resources/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="../resources/css/bootstrap-select.min.css">
     <link rel="stylesheet" href="../resources/css/report.min.css">
     <link rel="stylesheet" href="../resources/css/rain_form.min.css">
     <title>项目列表</title>
@@ -49,11 +49,13 @@
             <div class="tab-box">
                 <!-- Nav tabs -->
                 <ul class="nav nav-tabs" role="tablist">
-                    <li role="presentation" class="col-xs-6 active" ><a class="text-center" href="#data-watch" aria-controls="home" role="tab" data-toggle="tab">数据监控</a></li>
-                    <li role="presentation" class="col-xs-6 "><a class="text-center" href="#media-report" aria-controls="profile" role="tab" data-toggle="tab">媒体报表</a></li>
+                    <li role="presentation" class="col-xs-3" ><a class="text-center" href="#data-watch" aria-controls="data-watch" role="tab" data-toggle="tab">数据监控</a></li>
+                    <li role="presentation" class="col-xs-3 "><a class="text-center" href="#media-report" aria-controls="media-report" role="tab" data-toggle="tab">媒体报表</a></li>
+                    <li role="presentation" class="col-xs-3 active" ><a class="text-center" href="#crowd-info" aria-controls="crowd-info" role="tab" data-toggle="tab">人群信息</a></li>
+                    <li role="presentation" class="col-xs-3" ><a class="text-center" href="#interest-info" aria-controls="interest-info" role="tab" data-toggle="tab">兴趣图谱</a></li>
                 </ul>
                 <div class="tab-content">
-			    	<div role="tabpanel" class="tab-pane active" id="data-watch">
+			    	<div role="tabpanel" class="tab-pane " id="data-watch">
 			    		<div class="filter-box row">
 			    			<div class="col-xs-3 text-left">
 								<select class="selectpicker col-xs-7" data-style="btn-select-blue">
@@ -255,6 +257,107 @@
 							</tbody>
 						</table>
 					</div>
+					<div role="tabpanel" class="tab-pane active" id="crowd-info">
+						<div class="filter-box rain">
+							<div class="sub-row">
+								<label>分析周期</label>
+								<div class="rain-layer">
+		                            <label class="radio checked">
+		                                <input type="radio" name="crowd"> 7天
+		                            </label>
+		                        </div>
+		                        <div class="rain-layer">
+		                            <label class="radio checked">
+		                                <input type="radio" name="crowd"> 14天
+		                            </label>
+		                        </div>
+		                        <div class="rain-layer">
+		                            <label class="radio checked">
+		                                <input type="radio" name="crowd"> 30天
+		                            </label>
+		                        </div>
+		                        <div class="rain-layer">
+		                            <label class="radio checked">
+		                                <input type="radio" name="crowd"> 自定义
+		                            </label>
+		                        </div>
+							</div>
+							<div class="sub-row">
+								<label>统计内容</label>
+								<div class="rain-layer">
+		                            <label class="radio">
+		                                <input type="radio" name="crowd"> 展现量
+		                            </label>
+		                        </div>
+		                        <div class="rain-layer">
+		                            <label class="radio checked">
+		                                <input type="radio" name="crowd"> 点击量
+		                            </label>
+		                        </div>
+		                    </div>
+						</div>
+						<div class="chart-box"></div>
+						<div class="col-xs-6 chart-box"></div>
+						<div class="col-xs-6 chart-box"></div>
+						<div class="col-xs-4 chart-box"></div>
+						<div class="col-xs-4 chart-box"></div>
+						<div class="col-xs-4 chart-box"></div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="interest-info">
+						<div class="chart-box"></div>
+						<h3>分媒体兴趣分析</h3>
+						<div class="filter-box rain">
+							<div class="sub-row">
+								<label>选择媒体</label>
+								<div class="rain-layer">
+		                            <label class="radio ">
+		                                <input type="radio" name="crowd"> 百度贴吧
+		                            </label>
+		                        </div>
+		                        <div class="rain-layer">
+		                            <label class="radio ">
+		                                <input type="radio" name="crowd"> 近日头条
+		                            </label>
+		                        </div>
+		                        <div class="rain-layer">
+		                            <label class="radio ">
+		                                <input type="radio" name="crowd"> 搜狐新闻
+		                            </label>
+		                        </div>
+		                        <div class="rain-layer">
+		                            <label class="radio ">
+		                                <input type="radio" name="crowd"> 凤凰新闻
+		                            </label>
+		                        </div>
+		                        <div class="rain-layer">
+		                            <label class="radio ">
+		                                <input type="radio" name="crowd"> 一点资讯
+		                            </label>
+		                        </div>
+		                        <div class="rain-layer">
+		                            <label class="radio ">
+		                                <input type="radio" name="crowd"> 一点资讯
+		                            </label>
+		                        </div>
+		                        <div class="rain-layer">
+		                            <label class="radio ">
+		                                <input type="radio" name="crowd"> 凤凰新闻
+		                            </label>
+		                        </div>
+		                        <div class="rain-layer">
+		                            <label class="radio ">
+		                                <input type="radio" name="crowd"> 一点资讯
+		                            </label>
+		                        </div>
+		                        <div class="rain-layer">
+		                            <label class="radio ">
+		                                <input type="radio" name="crowd"> 一点资讯
+		                            </label>
+		                        </div>
+							</div>	
+						</div>
+						<div class="chart-box"></div>
+					</div>
 				</div>
             </div>
         </div>
@@ -285,7 +388,16 @@
     <script type="text/javascript" src="../resources/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../resources/js/bootstrap-select.min.js"></script>
     <script type="text/javascript">
-    	$('.selectpicker').selectpicker();
+
+    $(function() {
+      $('.radio').click(function(){
+        var radioId = $(this).attr('name');
+        $('.radio').removeClass('checked')&& $(this).addClass('checked');
+        $('input[type="radio"]').removeAttr('checked') && $('#' + radioId).attr('checked', 'checked');
+      });
+      $('.selectpicker').selectpicker();
+    });
+    
     </script>
 </body>
 

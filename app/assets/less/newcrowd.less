@@ -105,7 +105,7 @@ nav {
         }
         li.active {
             background-color: #25579c;
-            color: #fff;
+            span{color: #fff;}
         }
     }
 }
@@ -402,14 +402,22 @@ label[for="female"] {
         }
     }
     h4 {
-        padding: 10px 0;
+        padding: 50px 0 10px 0;
         border-bottom: 1px solid #f5f5f5;
+        font-weight: bolder;
     }
     figure {
         float: left;
         margin-right: 10px;
     }
-    .rain{position: relative;}
+    .rain{
+        position: relative;
+        a{
+            margin: 10px 50px auto 0;
+            display: inline-block;
+        }
+    }
+
 }
 
 .modal {
@@ -434,6 +442,10 @@ label[for="female"] {
         .img-box {
             width: 360px;
             height: 360px;
+        }
+        .banner-box{
+            width: 800px;
+            height: 125px;
         }
     }
     .modal-footer {
@@ -621,6 +633,7 @@ footer.gray-box {
     align-items: flex-end;
     position: absolute!important;
     right: 0;
+    top: 80px;
     span{margin: auto  auto auto 0px;}
     
     figure{

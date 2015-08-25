@@ -1,0 +1,70 @@
+.left-col {
+  width: 220px;
+  float: left;
+  margin-right: 40px;
+}
+.left-col h4 {
+  margin: 40px 0 ;
+}
+.left-col h4:nth-child(1) {
+  margin-top: 0;
+}
+.left-col .list-box {
+  background-color: #fff;
+}
+.left-col .list-box ul li {
+  text-align: center;
+  padding: 30px 50px;
+  border-bottom: 1px solid #f5f5f5;
+  font-weight: bolder;
+}
+.left-col .list-box ul li img {
+  width: 100%;
+}
+.white-box {
+  width: 900px;
+  background-color: #fff;
+  float: left;
+  padding: 50px;
+}
+.white-box header.row:nth-child(5),
+.white-box header.row:nth-child(3) {
+  margin: 20px -15px 10px;
+}
+.white-box h3 {
+  margin: 0;
+  font-weight: bolder;
+}
+.white-box table {
+  width: 100%;
+}
+.white-box table thead tr {
+  line-height: 50px;
+}
+.white-box table thead tr th:nth-child(1) {
+  text-align: left;
+}
+.white-box table thead tr th {
+  text-align: right;
+  padding: 0 15px;
+}
+.white-box table tbody tr {
+  line-height: 50px;
+}
+.white-box table tbody tr td .process-f {
+  width: 100px;
+  top: 40%;
+  right: 20px;
+  left: auto;
+}
+.white-box table tbody tr td:nth-child(1) {
+  padding-left: 15px;
+}
+.white-box table tbody tr:nth-child(odd) {
+  background-color: #fafafa;
+}
+.white-box .chart-box {
+  width: 800px;
+  height: 300px;
+  background-color: #f5f5f5;
+}
