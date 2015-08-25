@@ -207,20 +207,67 @@ table .process-bar:after {
 .btn-new-adviser {
   margin-top: 20px;
 }
-.carousel {
-  margin-top: 40px;
+.slider-box {
+  width: 100%;
+  background-color: #fff;
 }
-.carousel .carousel-inner {
+.slider-box .carousel {
+  margin-top: 40px;
+  margin-bottom: 80px;
+}
+.slider-box .carousel .carousel-inner {
   width: 700px;
   margin: 40px auto;
 }
-.carousel .carousel-inner .item .carousel-caption {
-  border-bottom: 1px solid #eee;
+.slider-box .carousel .carousel-inner .item {
+  padding-bottom: 40px;
+}
+.slider-box .carousel .carousel-inner .item .carousel-caption {
   display: block;
   position: initial;
+  text-shadow: none;
+  color: #333;
+  padding-top: 50px;
+  padding-bottom: 25px;
 }
-.carousel .carousel-inner .item .carousel-caption span {
+.slider-box .carousel .carousel-inner .item .carousel-caption span {
   color: #95a1b2;
+}
+.slider-box .carousel .carousel-inner .item .carousel-content {
+  padding: 40px;
+  border: 1px solid #eee;
+}
+.slider-box .carousel .carousel-inner .item .carousel-content figure {
+  float: left;
+  width: 78px;
+  height: 78px;
+  margin-right: 19px;
+  margin-bottom: 40px;
+}
+.slider-box .carousel .carousel-inner .item .carousel-content figure img {
+  width: 100%;
+}
+.slider-box .carousel .carousel-inner .item .carousel-content h3 {
+  padding-top: 20px;
+  margin: 0;
+}
+.slider-box .carousel .carousel-control.left,
+.slider-box .carousel .carousel-control.right {
+  background: none;
+}
+.slider-box .carousel .carousel-control {
+  width: 8.5%;
+}
+.slider-box .carousel .carousel-control i {
+  font-size: 80px;
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-color: #eee;
+  margin-top: 180px;
+}
+.slider-box .carousel .carousel-control i.available {
+  background-color: #25579c;
 }
 footer {
   width: 100%;
